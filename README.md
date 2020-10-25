@@ -16,7 +16,7 @@ Motherboard Model:   GPD G1619-01
 Memory Capacity:     16 GBytes @ 1866.7 MHz
 Memory Devices:      2
 Video Chipset:       Intel Iris Plus Graphics 940
-Built-in Monitor:    TV080WUM-NL0, MIPI Interface, from Boe Technology
+Built-in Monitor:    TV080WUM-NL0, 800x1280 resolution, MIPI Interface, from Boe Technology
 Touch Screen:        GoodixTouchDriver Device
 Touch Pad:           I2C HID Device
 Audio Adapter:       RealTek ALC269
