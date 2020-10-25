@@ -5,6 +5,9 @@ Thanks to all the volunteers who participated in this project. We have achieved 
 
 However, there's still some difficult problem need to be solved. We are currently trying to solve them in our leisure time. The progress may very slow. If you are also interested, join us to solve them together.
 
+# WinMax running Cataline 10.5.7
+
+
 # What's working
 * All USB port works include two type-c port. (TODO: Need to test if USB3 works)
 * Both two type-c ports can connect to external type-c to DP or HDMI monitors. I have tested BQNQ 4K monitor without a problem.
