@@ -7,7 +7,6 @@ However, there's still some difficult problem need to be solved. We are currentl
 
 # WinMax running Cataline 10.5.7
 ![image](https://github.com/kingo132/GPD-Win-Max-Hackintosh/blob/main/photos/screenshot.png)
-![image](https://github.com/kingo132/GPD-Win-Max-Hackintosh/blob/main/photos/winmax_mac.jpg)
 
 # What's working
 * All USB port works include two type-c port. (TODO: Need to test if USB3 works)
