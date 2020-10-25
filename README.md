@@ -33,7 +33,7 @@ However, there's still some difficult problem need to be solved. We are currentl
 # You may need to modify BIOS settings
 Note: We are testing under BIOS version 1.11
 ## How to modify
-* By using ru.efi, I have uploaded my BIOS dump file winmax_bios_dump.txt. You can find offset in this file and modify it using ru.efi.
+* By using ru.efi, I have uploaded my BIOS dump file [winmax_bios_dump.txt](https://github.com/kingo132/GPD-Win-Max-Hackintosh/blob/main/winmax_bios_dump.txt). You can find offset in this file and modify it using ru.efi.
 * Use setvar by grub
 * Other BIOS modify tools
 ## The options need to be modified
