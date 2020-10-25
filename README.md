@@ -34,7 +34,7 @@ However, there's still some difficult problem need to be solved. We are currentl
 * Other BIOS modify tools
 ## The options need to be modified
 * cfg-lock: Enable -> Disable
-* Vt-d: Enable -> DIsable
+* Vt-d: Enable -> Disable
 * Dvmt: 60MB -> 64MB
 Other options that the default value is satisfied
 * above 4g: default is enable
