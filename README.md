@@ -22,6 +22,7 @@ Touch Pad:           I2C HID Device
 Audio Adapter:       RealTek ALC269
 Wireless Adapter:    Intel(R) Wi-Fi 6 AX200 160MHz
 Ethernet Adapter:    RealTek Semiconductor RTL8168/8111 PCI-E Gigabit Ethernet NIC
+Bluetooth Device:    Intel Bluetooth Device
 Battery:             SR Real Battery - Intel SR 1 - 11.540 V / 57000 mWh
 ```
 # What's working
