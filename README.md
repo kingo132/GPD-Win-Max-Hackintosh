@@ -10,7 +10,7 @@ However, there's still some difficult problem need to be solved. We are currentl
 
 # What's working
 * All USB port works include two type-c port. (TODO: Need to test if USB3 works)
-* Both two type-c ports can connect to external type-c to DP or HDMI monitors. I have tested BQNQ 4K monitor without a problem.
+* Both two type-c ports can connect to external type-c to DP or HDMI monitors. I have tested BENQ 4K monitor without any problem.
 * Joystick emulated mouse works.
 * Gigabyte ethernet port works.
 * The native keyboard works.
@@ -18,7 +18,7 @@ However, there's still some difficult problem need to be solved. We are currentl
 * The sound card and speaker works, 3.5mm audio port also works, by using VoodooHDA.kext. Have tried AppleALC.kext but no luck. (TODO: Need to test if microphone works.)
 # What's working but have flaws 
 * Wifi can be driven by itlwm kext driver, the speed is tested at 20Mbps. However, the itlwm driver may fail to load occasionally at startup. I have checked the boot log and found nothing. The itlwm is just waiting for the hardware to response but the hardware doesn't give a response. Maybe this is a hardware conflict or the itlwm driver needs to be modified.
-* The Bluetooth also stops to load occasionally. Maybe the same cause as Wifi. Need to do more tests. When Bluetooth loads successfully. It works perfectly without a problem.
+* The Bluetooth also stops to load occasionally. Maybe the cause is the same as Wifi driver. Need to do more tests. When Bluetooth loads successfully. It works perfectly without a problem.
 * The battery information is read but can not read capacity. This is due to the _STA function in SSDT. Need to be fixed.
 # What's not working and currently trying to solve
 * The touchpad is not working - need to modify SSDT, and also maybe need to develop drivers
@@ -27,7 +27,7 @@ However, there's still some difficult problem need to be solved. We are currentl
 * Sleep/Hibernate problem - maybe need to modify SSDT code of CPU
 * System may freeze during shutdown - may be related to sleep/hibernate problem
 * Thunderbolt 3 is not driven - need to modify SSDT and BIOS configuration
-* HDMI port is not working - maybe it will not work because Apple does not have an HDMI port in this CPU
+* HDMI port is not working - maybe it will not work because Apple framebuffer driver does not have an HDMI port on this CPU
 * iStat Menu can not read the temperature of CPU
 
 
