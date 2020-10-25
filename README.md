@@ -5,7 +5,7 @@ Thanks to all the volunteers who participated in this project. We have achieved 
 
 However, there's still some difficult problem need to be solved. We are currently trying to solve them in our leisure time. The progress may very slow. If you are also interested, join us to solve them together.
 
-# WinMax running Cataline 10.5.7
+# WinMax running Catalina 10.5.7
 ![image](https://github.com/kingo132/GPD-Win-Max-Hackintosh/blob/main/photos/screenshot.png)
 
 # What's working
