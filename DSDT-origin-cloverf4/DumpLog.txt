@@ -1,0 +1,95 @@
+7:343  0:226  Found UEFI Acpi 2.0 RSDP at %p
+7:343  0:000  Saving ACPI tables from RSDP %p to Âçí‚ÅÑÂëê‚Åí‰Ö£‰Öå‰≠ì…ÅÈéî‰ï£$ ...
+7:343  0:000   %p: 'RSD PTR cALASKAîìcE$', Rev: 1127784855 (Acpi 2.0 or newer), Len: 36
+7:343  0:000    (Xsdt: %p, Rsdt: %p)
+7:343  0:000    %p: 'XSDT‰', 'XSDT', Rev: 1127784679, Len: 1
+7:343  0:000    %p: 'RSDTÑ', 'RSDT', Rev: 1127784679, Len: 1
+7:343  0:000    Tables in Xsdt: 24
+7:343  0:000    0. %p: 'FACP', 'FACP', Rev: 1127784679, Len: 6
+7:343  0:000        (Dsdt: 455F4000, Facs: 456B4000, XDsdt: 455f4000, XFacs: 0)
+7:343  0:000        %p: 'DSDT;Ñ', 'DSDT', Rev: 1127784535, Len: 2
+7:348  0:005        %p: 'FACS@', Ver: 1127784699, Len: 2
+7:348  0:000    1. %p: 'MCFG<', 'MCFG', Rev: 1127784679, Len: 1
+7:348  0:000    2. %p: 'SSDTZs', 'SSDT', Rev: 1127784679, Len: 2
+7:348  0:000    3. %p: 'SSDTa', 'SSDT', Rev: 1127784679, Len: 2
+7:348  0:000    4. %p: 'FPDTD', 'FPDT', Rev: 1127784679, Len: 1
+7:348  0:000    5. %p: 'FIDTú', 'FIDT', Rev: 1127784679, Len: 1
+7:348  0:000    6. %p: 'MSDMU', 'MSDM', Rev: 1127784679, Len: 3
+7:348  0:000    7. %p: 'SSDT„3', 'SSDT', Rev: 1127784679, Len: 2
+7:348  0:000    8. %p: 'SSDTz≤', 'SSDT', Rev: 1127784679, Len: 2
+7:348  0:000    9. %p: 'HPET8', 'HPET', Rev: 1127784679, Len: 1
+7:348  0:000    10. %p: 'SSDT‰', 'SSDT', Rev: 1127784679, Len: 2
+7:348  0:000    11. %p: 'SSDT•', 'SSDT', Rev: 1127784679, Len: 2
+7:348  0:000    12. %p: 'NHLTq', 'NHLT', Rev: 1127784679, Len: 0
+7:348  0:000    13. %p: 'LPITî', 'LPIT', Rev: 1127784679, Len: 1
+7:348  0:000    14. %p: 'SSDT '', 'SSDT', Rev: 1127784679, Len: 2
+7:348  0:000    15. %p: 'SSDTª', 'SSDT', Rev: 1127784679, Len: 2
+7:348  0:000    16. %p: 'DBGP4', 'DBGP', Rev: 1127784679, Len: 1
+7:348  0:000    17. %p: 'DBG2T', 'DBG2', Rev: 1127784679, Len: 0
+7:348  0:000    18. %p: 'SSDTÛ', 'SSDT', Rev: 1127784679, Len: 2
+7:348  0:000    19. %p: 'DMAR∞', 'DMAR', Rev: 1127784679, Len: 2
+7:348  0:000    20. %p: 'SSDTD', 'SSDT', Rev: 1127784679, Len: 2
+7:348  0:000    21. %p: 'WSMT(', 'WSMT', Rev: 1127784679, Len: 1
+7:348  0:000    22. %p: 'APICº', 'APIC', Rev: 1127784679, Len: 4
+7:348  0:000    23. %p: 'BGRT8', 'BGRT', Rev: 1127784679, Len: 1
+7:348  0:000    Tables in Rsdt: 24
+7:348  0:000    0. %p: 'FACP', 'FACP', Rev: 1127784679, Len: 6
+7:348  0:000        (Dsdt: 455F4000, Facs: 456B4000, XDsdt: 455f4000, XFacs: 0)
+7:348  0:000        %p: 'DSDT;Ñ', 'DSDT', Rev: 1127784535, Len: 2
+7:353  0:005        %p: 'FACS@', Ver: 1127784699, Len: 2
+7:353  0:000    1. %p: 'MCFG<', 'MCFG', Rev: 1127784679, Len: 1
+7:353  0:000    2. %p: 'SSDTZs', 'SSDT', Rev: 1127784679, Len: 2
+7:353  0:000    3. %p: 'SSDTa', 'SSDT', Rev: 1127784679, Len: 2
+7:353  0:000    4. %p: 'FPDTD', 'FPDT', Rev: 1127784679, Len: 1
+7:353  0:000    5. %p: 'FIDTú', 'FIDT', Rev: 1127784679, Len: 1
+7:353  0:000    6. %p: 'MSDMU', 'MSDM', Rev: 1127784679, Len: 3
+7:353  0:000    7. %p: 'SSDT„3', 'SSDT', Rev: 1127784679, Len: 2
+7:353  0:000    8. %p: 'SSDTz≤', 'SSDT', Rev: 1127784679, Len: 2
+7:353  0:000    9. %p: 'HPET8', 'HPET', Rev: 1127784679, Len: 1
+7:353  0:000    10. %p: 'SSDT‰', 'SSDT', Rev: 1127784679, Len: 2
+7:353  0:000    11. %p: 'SSDT•', 'SSDT', Rev: 1127784679, Len: 2
+7:353  0:000    12. %p: 'NHLTq', 'NHLT', Rev: 1127784679, Len: 0
+7:353  0:000    13. %p: 'LPITî', 'LPIT', Rev: 1127784679, Len: 1
+7:353  0:000    14. %p: 'SSDT '', 'SSDT', Rev: 1127784679, Len: 2
+7:353  0:000    15. %p: 'SSDTª', 'SSDT', Rev: 1127784679, Len: 2
+7:353  0:000    16. %p: 'DBGP4', 'DBGP', Rev: 1127784679, Len: 1
+7:353  0:000    17. %p: 'DBG2T', 'DBG2', Rev: 1127784679, Len: 0
+7:353  0:000    18. %p: 'SSDTÛ', 'SSDT', Rev: 1127784679, Len: 2
+7:353  0:000    19. %p: 'DMAR∞', 'DMAR', Rev: 1127784679, Len: 2
+7:353  0:000    20. %p: 'SSDTD', 'SSDT', Rev: 1127784679, Len: 2
+7:353  0:000    21. %p: 'WSMT(', 'WSMT', Rev: 1127784679, Len: 1
+7:353  0:000    22. %p: 'APICº', 'APIC', Rev: 1127784679, Len: 4
+7:353  0:000    23. %p: 'BGRT8', 'BGRT', Rev: 1127784679, Len: 1
+7:353  0:000  Found UEFI Acpi 1.0 RSDP at %p
+7:353  0:000  Printing ACPI tables from RSDP %p ...
+7:353  0:000   %p: 'RSD PTR ¸ALASKA', Rev: 1127784855 (Acpi 1.0), Len: 20
+7:353  0:000    (Rsdt: %p)
+7:353  0:000    %p: 'RSDTÑ', 'RSDT', Rev: 1127784679, Len: 1
+7:353  0:000    Tables in Rsdt: 24
+7:353  0:000    0. %p: 'FACP', 'FACP', Rev: 1127784679, Len: 6
+7:353  0:000        (Dsdt: 455F4000, Facs: 456B4000, XDsdt: 455f4000, XFacs: 0)
+7:353  0:000        %p: 'DSDT;Ñ', 'DSDT', Rev: 1127784535, Len: 2
+7:358  0:005        %p: 'FACS@', Ver: 1127784699, Len: 2
+7:358  0:000    1. %p: 'MCFG<', 'MCFG', Rev: 1127784679, Len: 1
+7:358  0:000    2. %p: 'SSDTZs', 'SSDT', Rev: 1127784679, Len: 2
+7:358  0:000    3. %p: 'SSDTa', 'SSDT', Rev: 1127784679, Len: 2
+7:358  0:000    4. %p: 'FPDTD', 'FPDT', Rev: 1127784679, Len: 1
+7:358  0:000    5. %p: 'FIDTú', 'FIDT', Rev: 1127784679, Len: 1
+7:358  0:000    6. %p: 'MSDMU', 'MSDM', Rev: 1127784679, Len: 3
+7:358  0:000    7. %p: 'SSDT„3', 'SSDT', Rev: 1127784679, Len: 2
+7:358  0:000    8. %p: 'SSDTz≤', 'SSDT', Rev: 1127784679, Len: 2
+7:358  0:000    9. %p: 'HPET8', 'HPET', Rev: 1127784679, Len: 1
+7:358  0:000    10. %p: 'SSDT‰', 'SSDT', Rev: 1127784679, Len: 2
+7:358  0:000    11. %p: 'SSDT•', 'SSDT', Rev: 1127784679, Len: 2
+7:358  0:000    12. %p: 'NHLTq', 'NHLT', Rev: 1127784679, Len: 0
+7:358  0:000    13. %p: 'LPITî', 'LPIT', Rev: 1127784679, Len: 1
+7:358  0:000    14. %p: 'SSDT '', 'SSDT', Rev: 1127784679, Len: 2
+7:358  0:000    15. %p: 'SSDTª', 'SSDT', Rev: 1127784679, Len: 2
+7:358  0:000    16. %p: 'DBGP4', 'DBGP', Rev: 1127784679, Len: 1
+7:358  0:000    17. %p: 'DBG2T', 'DBG2', Rev: 1127784679, Len: 0
+7:358  0:000    18. %p: 'SSDTÛ', 'SSDT', Rev: 1127784679, Len: 2
+7:358  0:000    19. %p: 'DMAR∞', 'DMAR', Rev: 1127784679, Len: 2
+7:358  0:000    20. %p: 'SSDTD', 'SSDT', Rev: 1127784679, Len: 2
+7:358  0:000    21. %p: 'WSMT(', 'WSMT', Rev: 1127784679, Len: 1
+7:358  0:000    22. %p: 'APICº', 'APIC', Rev: 1127784679, Len: 4
+7:358  0:000    23. %p: 'BGRT8', 'BGRT', Rev: 1127784679, Len: 1
