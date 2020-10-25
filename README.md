@@ -47,6 +47,7 @@ Other options that the default value is satisfied
 * boot mode select: default is efi
 
 # PCI information from ubuntu
+···
 00:00.0 Host bridge: Intel Corporation Device 8a12 (rev 03)
 00:02.0 VGA compatible controller: Intel Corporation Iris Plus Graphics G7 (rev 07)
 00:04.0 Signal processing controller: Intel Corporation Device 8a03 (rev 03)
@@ -71,4 +72,4 @@ Other options that the default value is satisfied
 2c:00.0 Network controller: Intel Corporation Wi-Fi 6 AX200 (rev 1a)
 2d:00.0 Ethernet controller: Realtek Semiconductor Co., Ltd. RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller (rev 15)
 2e:00.0 Non-Volatile memory controller: Sandisk Corp Device 5009 (rev 01)
-
+···
