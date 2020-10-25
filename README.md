@@ -13,7 +13,7 @@ However, there's still some difficult problem need to be solved. We are currentl
 * Both two type-c ports can connect to external type-c to DP or HDMI monitors. I have tested BENQ 4K monitor without any problem.
 * Joystick emulated mouse works.
 * Gigabyte ethernet port works.
-* The native keyboard works.
+* The built-in keyboard works.
 * The Intel Iris integrated graphic card works, and the screen can be rotated 270 degrees by using ScreedResX.
 * The sound card and speaker works, 3.5mm audio port also works, by using VoodooHDA.kext. Have tried AppleALC.kext but no luck. (TODO: Need to test if microphone works.)
 # What's working but have flaws 
