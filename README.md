@@ -18,9 +18,9 @@ However, there're still some difficult problems need to be solved. We are curren
 * The sound card and speaker works, 3.5mm audio port also works, by using VoodooHDA.kext. Have tried AppleALC.kext but no luck. (TODO: Need to test if microphone works.)
 # What's working but have flaws 
 * Wifi can be driven by itlwm kext driver, the speed is tested at 20Mbps. However, the itlwm driver may fail to load occasionally at startup. I have checked the boot log and found nothing. The itlwm is just waiting for the hardware to response but the hardware doesn't give a response. Maybe this is a hardware conflict or the itlwm driver needs to be modified.
-* The Bluetooth also may fail to load occasionally. Maybe the cause is the same as Wifi driver. Need to do more tests. When Bluetooth loads successfully. It works perfectly without a problem.
+* The Bluetooth also may fail to load occasionally. Maybe the cause is the same as Wifi driver. Need to do more tests. When Bluetooth loads successfully. It works perfectly without any problem.
 * The battery information is read but can not read capacity. This is due to the _STA function in SSDT. Need to be fixed.
-* The built-in sd card reader works, but it may cause iStat menu to continuesly print error logs.
+* The built-in sd card reader works, but it may cause iStat menu to continuesly print error logs. The only solution I found is to disable iStat menu disk monitor or do not insert or mount any sd card.
 * iStat menu may freeze during boot time, maybe related to some hardware issue.
 # What's not working and currently trying to solve
 * The touchpad is not working - need to modify SSDT, and also maybe need to develop drivers
