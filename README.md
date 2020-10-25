@@ -8,6 +8,20 @@ However, there're still some difficult problems need to be solved. We are curren
 # WinMax running Catalina 10.5.7
 ![image](https://github.com/kingo132/GPD-Win-Max-Hackintosh/blob/main/photos/screenshot.png)
 
+# The specification of Win Max
+```
+CPU Brand Name:      Intel(R) Core(TM) i5-1035G7 CPU @ 1.20GHz
+CPU Code Name:       Ice Lake-U
+Motherboard Model:   GPD G1619-01
+Video Chipset:       Intel Iris Plus Graphics 940
+Built-in Monitor:    TV080WUM-NL0
+Memory Capacity:     16 GBytes
+Memory Devices:      2
+Audio Adapter:       RealTek ALC269
+Wireless Adapter:    Intel(R) Wi-Fi 6 AX200 160MHz
+Ethernet Adapter:    RealTek Semiconductor RTL8168/8111 PCI-E Gigabit Ethernet NIC
+Battery:             SR Real Battery - Intel SR 1 - 11.540 V / 57000 mWh
+```
 # What's working
 * All USB port works include two type-c port. (TODO: Need to test if USB3 works)
 * Both two type-c ports can connect to external type-c to DP or HDMI monitors. I have tested BENQ 4K monitor without any problem.
