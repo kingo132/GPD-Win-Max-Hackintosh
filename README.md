@@ -22,7 +22,7 @@ However, there's still some difficult problem need to be solved. We are currentl
 * There are glitches on the screen when entering desktop and shutting down. Tried many fixes and no avail. Maybe this is an Apple framebuffer driver problem, or display edid problem. Or maybe we need to wait for 1038ng7 to fix this problem.
 * Sleep/Hibernate problem - maybe need to modify SSDT code of CPU
 * System may freeze during shutdown - may be related to sleep/hibernate problem
-* Thunderbolt is not driven - need not modify SSDT and BIOS configuration
+* Thunderbolt 3 is not driven - need to modify SSDT and BIOS configuration
 * HDMI port is not working - maybe it will not work because Apple does not have an HDMI port in this CPU
 * iStat Menu can not read the temperature of CPU
 
