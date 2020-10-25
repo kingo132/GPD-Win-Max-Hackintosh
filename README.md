@@ -10,10 +10,10 @@ However, there're still some difficult problems need to be solved. We are curren
 
 # The specification of Win Max
 ```
-CPU Brand Name:      Intel(R) Core(TM) i5-1035G7 CPU @ 1.20GHz
+CPU Brand Name:      Intel(R) Core(TM) i5-1035G7 CPU @ 1.20GHz, Max Turbo 3.70GHz
 CPU Code Name:       Ice Lake-U
 Motherboard Model:   GPD G1619-01
-Memory Capacity:     16 GBytes
+Memory Capacity:     16 GBytes @ 1866.7 MHz
 Memory Devices:      2
 Video Chipset:       Intel Iris Plus Graphics 940
 Built-in Monitor:    TV080WUM-NL0
