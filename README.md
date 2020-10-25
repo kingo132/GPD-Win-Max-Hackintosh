@@ -13,7 +13,7 @@ However, there's still some difficult problem need to be solved. We are currentl
 * The native keyboard works.
 * The Intel Iris integrated graphic card works, and the screen can be rotated 270 degrees by using ScreedResX.
 # What's working but have flaws 
-* Wifi can be driven by itlwm kext driver, the speed tested at 20Mbps. However, the itlwm driver may fail to load occasionally at startup. I have checked the boot log and found nothing. The itlwm is just waiting for the hardware to response but the hardware doesn't give a response. Maybe this is a hardware conflict or the itlwm driver needs to be modified.
+* Wifi can be driven by itlwm kext driver, the speed is tested at 20Mbps. However, the itlwm driver may fail to load occasionally at startup. I have checked the boot log and found nothing. The itlwm is just waiting for the hardware to response but the hardware doesn't give a response. Maybe this is a hardware conflict or the itlwm driver needs to be modified.
 * The Bluetooth also stops to load occasionally. Maybe the same cause as Wifi. Need to do more tests. When Bluetooth loads successfully. It works perfectly without a problem.
 * The battery information is read but can not read capacity. This is due to the _STA function in SSDT. Need to be fixed.
 # What's not working and currently trying to solve
