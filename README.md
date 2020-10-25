@@ -45,3 +45,30 @@ Other options that the default value is satisfied
 * above 4g: default is enable
 * csm: default is disabled
 * boot mode select: default is efi
+
+# PCI information from ubuntu
+00:00.0 Host bridge: Intel Corporation Device 8a12 (rev 03)
+00:02.0 VGA compatible controller: Intel Corporation Iris Plus Graphics G7 (rev 07)
+00:04.0 Signal processing controller: Intel Corporation Device 8a03 (rev 03)
+00:07.0 PCI bridge: Intel Corporation Ice Lake Thunderbolt 3 PCI Express Root Port #0 (rev 03)
+00:0d.0 USB controller: Intel Corporation Ice Lake Thunderbolt 3 USB Controller (rev 03)
+00:0d.2 System peripheral: Intel Corporation Ice Lake Thunderbolt 3 NHI #0 (rev 03)
+00:14.0 USB controller: Intel Corporation Ice Lake-LP USB 3.1 xHCI Host Controller (rev 30)
+00:14.2 RAM memory: Intel Corporation Device 34ef (rev 30)
+00:15.0 Serial bus controller [0c80]: Intel Corporation Ice Lake-LP Serial IO I2C Controller #0 (rev 30)
+00:15.1 Serial bus controller [0c80]: Intel Corporation Ice Lake-LP Serial IO I2C Controller #1 (rev 30)
+00:16.0 Communication controller: Intel Corporation Management Engine Interface (rev 30)
+00:17.0 SATA controller: Intel Corporation Ice Lake-LP SATA Controller [AHCI mode] (rev 30)
+00:1c.0 PCI bridge: Intel Corporation Device 34ba (rev 30)
+00:1c.6 PCI bridge: Intel Corporation Device 34be (rev 30)
+00:1d.0 PCI bridge: Intel Corporation Ice Lake-LP PCI Express Root Port #9 (rev 30)
+00:1e.0 Communication controller: Intel Corporation Ice Lake-LP Serial IO UART Controller #0 (rev 30)
+00:1e.3 Serial bus controller [0c80]: Intel Corporation Ice Lake-LP Serial IO SPI Controller #1 (rev 30)
+00:1f.0 ISA bridge: Intel Corporation Ice Lake-LP LPC Controller (rev 30)
+00:1f.3 Audio device: Intel Corporation Smart Sound Technology Audio Controller (rev 30)
+00:1f.4 SMBus: Intel Corporation Ice Lake-LP SMBus Controller (rev 30)
+00:1f.5 Serial bus controller [0c80]: Intel Corporation Ice Lake-LP SPI Controller (rev 30)
+2c:00.0 Network controller: Intel Corporation Wi-Fi 6 AX200 (rev 1a)
+2d:00.0 Ethernet controller: Realtek Semiconductor Co., Ltd. RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller (rev 15)
+2e:00.0 Non-Volatile memory controller: Sandisk Corp Device 5009 (rev 01)
+
