@@ -28,7 +28,7 @@ The only solution I found is to disable iStat menu disk monitor or do not insert
 * iStat menu may freeze during boot time, maybe related to some hardware issue.
 # What's not working and currently trying to solve
 * The touchpad is not working - need to modify SSDT, and also maybe need to develop drivers
-* The touch screen is not working - the same as the touchpad, however, someone has already developed a touchscreen driver for GPD P2Max, these two touchscreens is the same.
+* The touch screen is not working - the same as the touchpad, however, someone has already developed a touchscreen driver for GPD P2Max ([This Repository](https://github.com/Azkali/GPD-P2-MAX-Hackintosh)), these two touchscreens is the same.
 * There are glitches on the screen when entering desktop and shutting down. Tried many fixes and no avail. Maybe this is an Apple framebuffer driver problem, or display edid problem. Or maybe we need to wait for 1038ng7 to fix this problem.
 * Sleep/Hibernate problem - maybe need to modify SSDT code of CPU
 * System may freeze during shutdown - may be related to sleep/hibernate problem
