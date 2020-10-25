@@ -13,10 +13,12 @@ However, there're still some difficult problems need to be solved. We are curren
 CPU Brand Name:      Intel(R) Core(TM) i5-1035G7 CPU @ 1.20GHz
 CPU Code Name:       Ice Lake-U
 Motherboard Model:   GPD G1619-01
-Video Chipset:       Intel Iris Plus Graphics 940
-Built-in Monitor:    TV080WUM-NL0
 Memory Capacity:     16 GBytes
 Memory Devices:      2
+Video Chipset:       Intel Iris Plus Graphics 940
+Built-in Monitor:    TV080WUM-NL0
+Touch Screen:        GoodixTouchDriver Device
+Touch Pad:           I2C HID Device
 Audio Adapter:       RealTek ALC269
 Wireless Adapter:    Intel(R) Wi-Fi 6 AX200 160MHz
 Ethernet Adapter:    RealTek Semiconductor RTL8168/8111 PCI-E Gigabit Ethernet NIC
