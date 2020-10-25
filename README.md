@@ -11,20 +11,20 @@ However, there's still some difficult problem need to be solved. We are currentl
 * Joystick emulated mouse works.
 * Gigabyte ethernet port works.
 * The native keyboard works.
-* The Intel Iris integrated graphic card works, and the screen can be ratated 270 degrees by using ScreedResX.
+* The Intel Iris integrated graphic card works, and the screen can be rotated 270 degrees by using ScreedResX.
 # What's working but have flaws 
-* Wifi can be drivered by itlwm kext driver, the speed tested at 20Mbps. However the itlwm driver may fail to load occasionally at startup. I have checked the boot log and found nothing. The itlwm is just waiting the hardware to response but the hardware doesn't give response. Maybe this is a hardward conflict or the itlwm driver need to be modified.
-* The bluetooth also stop to load occasionally. Maybe the same cause as Wifi. Need to do more test. When bluetooth load successfully. It works perfect without a problem.
-* The battery information is readed but can not read capacity. This is due to the _STA function in SSDT. Need to be fixed.
+* Wifi can be driven by itlwm kext driver, the speed tested at 20Mbps. However, the itlwm driver may fail to load occasionally at startup. I have checked the boot log and found nothing. The itlwm is just waiting for the hardware to response but the hardware doesn't give a response. Maybe this is a hardware conflict or the itlwm driver needs to be modified.
+* The Bluetooth also stops to load occasionally. Maybe the same cause as Wifi. Need to do more tests. When Bluetooth loads successfully. It works perfectly without a problem.
+* The battery information is read but can not read capacity. This is due to the _STA function in SSDT. Need to be fixed.
 # What's no working and currently trying to solve
 * The touchpad is not working - need to modify SSDT, and also maybe need to develop drivers
-* The touch screen is not working - the same as touchpad, however someone has already developed a touchscreen driver for GPD P2Max, these two touchscreen is the same.
-* There's glitch on screen when entering desktop and shutting down. Tried many fixes and no avail. Maybe this is a Apple framebuffer driver problem, or display edid problem. Or maybe we need to wait 1038ng7 to fix this problem.
+* The touch screen is not working - the same as the touchpad, however, someone has already developed a touchscreen driver for GPD P2Max, these two touchscreens is the same.
+* There are glitches on the screen when entering desktop and shutting down. Tried many fixes and no avail. Maybe this is an Apple framebuffer driver problem, or display edid problem. Or maybe we need to wait for 1038ng7 to fix this problem.
 * Sleep/Hibernate problem - maybe need to modify SSDT code of CPU
-* System may freeze during shutdown - maybe releated to sleep/hibernate problem
-* Thunderbolt is not drived - need not modify SSDT and BIOS configuration
-* HDMI port is not workding - may be it will not work because Apple does not have hdmi port in this CPU
-* iStat Menu can not read the temperatue of CPU
+* System may freeze during shutdown - may be related to sleep/hibernate problem
+* Thunderbolt is not driven - need not modify SSDT and BIOS configuration
+* HDMI port is not working - maybe it will not work because Apple does not have an HDMI port in this CPU
+* iStat Menu can not read the temperature of CPU
 
 
 # You may need to modify BIOS settings
