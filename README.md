@@ -73,3 +73,48 @@ Other options that the default value is satisfied
 2d:00.0 Ethernet controller: Realtek Semiconductor Co., Ltd. RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller (rev 15)
 2e:00.0 Non-Volatile memory controller: Sandisk Corp Device 5009 (rev 01)
 ```
+
+# Integrated display EDID from ubuntu
+```
+edid-decode (hex):
+
+00 ff ff ff ff ff ff 00 31 d8 00 00 00 00 00 00 
+05 16 01 03 6d 14 21 78 ea 5e c0 a4 59 4a 98 25 
+20 50 54 00 00 00 45 00 01 01 01 01 01 01 01 01 
+01 01 01 01 01 01 c2 1a 20 50 30 00 10 50 10 10 
+32 00 d0 4d 01 00 00 1e 00 00 00 ff 00 4c 69 6e 
+75 78 20 23 30 0a 20 20 20 20 00 00 00 fd 00 3b 
+3d 4c 4e 07 00 0a 20 20 20 20 20 20 00 00 00 fc 
+00 38 30 30 78 31 32 38 30 0a 20 20 20 20 00 ea 
+
+----------------
+
+EDID version: 1.3
+Manufacturer: LNX Model 0 Serial Number 0
+Made in week 5 of 2012
+Analog display, Input voltage level: 0.7/0.7 V
+Sync: Separate Composite Serration 
+Maximum image size: 20 cm x 33 cm
+Gamma: 2.20
+DPMS levels: Standby Suspend Off
+RGB color display
+First detailed timing is preferred timing
+Color Characteristics
+  Red:   0.6416, 0.3486
+  Green: 0.2919, 0.5957
+  Blue:  0.1474, 0.1250
+  White: 0.3125, 0.3281
+Established Timings I & II: none
+Standard Timings
+    800x504    60.001 Hz  16:10   31.320 kHz  31.571 MHz (GTF)
+Detailed mode: Clock 68.500 MHz, 208 mm x 333 mm
+                800  816  832  880 ( 16  16  48)
+               1280 1283 1285 1296 (  3   2  11)
+               +hsync +vsync
+               VertFreq: 60.062 Hz, HorFreq: 77.841 kHz
+Display Product Serial Number: Linux #0
+Display Range Limits
+  Monitor ranges (GTF): 59-61 Hz V, 76-78 kHz H, max dotclock 70 MHz
+Display Product Name: 800x1280
+Checksum: 0xea
+```
