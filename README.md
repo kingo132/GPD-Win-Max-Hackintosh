@@ -49,7 +49,7 @@ The only solution I found is to disable iStat menu disk monitor or do not insert
 * There are glitches on the screen when entering desktop and shutting down. Tried many fixes and no avail. Maybe this is an Apple framebuffer driver problem, or display edid problem. Or maybe we need to wait for 1038ng7 to fix this problem.
 * Sleep/Hibernate problem - maybe need to modify SSDT code of CPU
 * System may freeze during shutdown - may be related to sleep/hibernate problem
-* Thunderbolt 3 is not driven - need to modify SSDT and BIOS configuration, may be the device path is TDM0? or RP09? RP01? RP05?
+* Thunderbolt 3 is not driven - need to modify SSDT and BIOS configuration, may be the device path is TDM0? or TRP0? RP09? RP01? RP05?
   * Testing 20201025: The [Belkin Thunderbolt™ 3 Express Dock HD](https://www.belkin.com/us/p/P-F4U095/) works perfectly when plugged before powerup the system. However, it does not support hotplug. I'm wondering if the thunderbolt is already driven. Although the thunderbolt information in the system report is: Thunderbolt: No drivers are loaded. I also tested an External GPU Enclosure (Aorus Gaming Box + Asrock 5500XT Mini). The LED light in EGPU glows successfully. However, the startup process hangs on gIOScreenLockstate. I got the EGPU path on Ubuntu. It is 05:00:0. I tried to add the EDID of Built-in and External Display. No luck, still hangs.
 * HDMI port is not working - maybe it will not work because Apple framebuffer driver does not have a HDMI port on this CPU
 * iStat Menu can not read the temperature of CPU. I don't know if this is due to VirtualSMC does not support this CPU, or need to modify SSDT.
