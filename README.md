@@ -3,31 +3,60 @@ Hello, everyone. This is a repository discussing how to install Mac OS Catalina 
 
 Thanks to all the volunteers who participated in this project. We have achieved the minimal requirement to use Mac OS on this little machine.
 
-However, there's still some difficult problem need to be solved. We are currently trying to solve them in our leisure time. The progress may very slow. If you are also interested, join us to solve them together.
+However, there're still some difficult problems need to be solved. We are currently trying to solve them in our leisure time. The progress may very slow. If you are also interested, join us to solve them together.
 
-# WinMax running Cataline 10.5.7
+# WinMax running Catalina 10.5.7
 ![image](https://github.com/kingo132/GPD-Win-Max-Hackintosh/blob/main/photos/screenshot.png)
 
+# The specification of Win Max
+```
+CPU Brand Name:      Intel(R) Core(TM) i5-1035G7 CPU @ 1.20GHz, Max Turbo 3.70GHz
+CPU Code Name:       Ice Lake-U
+Motherboard Model:   GPD G1619-01
+Memory Capacity:     16 GBytes @ 1866.7 MHz
+Memory Devices:      2
+Video Chipset:       Intel Iris Plus Graphics 940
+Built-in Monitor:    TV080WUM-NL0, 800x1280 resolution, MIPI Interface, from Boe Technology
+Touch Screen:        GoodixTouchDriver Device
+Touch Pad:           I2C HID Device
+Audio Adapter:       RealTek ALC269
+Wireless Adapter:    Intel(R) Wi-Fi 6 AX200 160MHz
+Ethernet Adapter:    RealTek Semiconductor RTL8168/8111 PCI-E Gigabit Ethernet NIC
+Bluetooth Device:    Intel Bluetooth Device
+Battery:             SR Real Battery - Intel SR 1 - 11.540 V / 57000 mWh
+```
 # What's working
 * All USB port works include two type-c port. (TODO: Need to test if USB3 works)
-* Both two type-c ports can connect to external type-c to DP or HDMI monitors. I have tested BQNQ 4K monitor without a problem.
+* Both two type-c ports can connect to external type-c to DP or HDMI monitors. I have tested BENQ 4K monitor without any problem.
 * Joystick emulated mouse works.
 * Gigabyte ethernet port works.
-* The native keyboard works.
+* The built-in keyboard works.
 * The Intel Iris integrated graphic card works, and the screen can be rotated 270 degrees by using ScreedResX.
+* The sound card and speaker works, 3.5mm audio port also works, by using VoodooHDA.kext. Have tried AppleALC.kext but no luck. (TODO: Need to test if microphone works.)
 # What's working but have flaws 
 * Wifi can be driven by itlwm kext driver, the speed is tested at 20Mbps. However, the itlwm driver may fail to load occasionally at startup. I have checked the boot log and found nothing. The itlwm is just waiting for the hardware to response but the hardware doesn't give a response. Maybe this is a hardware conflict or the itlwm driver needs to be modified.
-* The Bluetooth also stops to load occasionally. Maybe the same cause as Wifi. Need to do more tests. When Bluetooth loads successfully. It works perfectly without a problem.
+  * Work around: You can try not to load itlwm at startup. And load it after log into desktop. See load.sh in itlwm source code for more info.
+* The Bluetooth also may fail to load occasionally. Maybe the cause is the same as Wifi driver. Need to do more tests. When Bluetooth loads successfully. It works perfectly without any problem.
+  * Work around: When itlwm is not load at startup. The bluetooth works perfectly. You can try load itlwm after system boot up to fix bluetooth problem.
 * The battery information is read but can not read capacity. This is due to the _STA function in SSDT. Need to be fixed.
+  * Fixed.
+* The built-in sd card reader works, but it may cause iStat menu to continuesly print error logs like this.
+```
+deleted fsctl error: Inappropriate ioctl for device, using HARDCODED desired threshold ...
+```
+The only solution I found is to disable iStat menu disk monitor or do not insert or mount any sd card.
+* iStat menu may freeze during boot time, maybe related to some hardware issue.
+  * Solution: Do not use newer OpenCore version. Stick at 0.6.0.
 # What's not working and currently trying to solve
 * The touchpad is not working - need to modify SSDT, and also maybe need to develop drivers
-* The touch screen is not working - the same as the touchpad, however, someone has already developed a touchscreen driver for GPD P2Max, these two touchscreens is the same.
+* The touch screen is not working - the same as the touchpad, however, someone has already developed a touchscreen driver for GPD P2Max ([This Repository](https://github.com/Azkali/GPD-P2-MAX-Hackintosh)), these two touchscreens is the same.
 * There are glitches on the screen when entering desktop and shutting down. Tried many fixes and no avail. Maybe this is an Apple framebuffer driver problem, or display edid problem. Or maybe we need to wait for 1038ng7 to fix this problem.
 * Sleep/Hibernate problem - maybe need to modify SSDT code of CPU
-* System may freeze during shutdown - may be related to sleep/hibernate problem
-* Thunderbolt 3 is not driven - need to modify SSDT and BIOS configuration
-* HDMI port is not working - maybe it will not work because Apple does not have an HDMI port in this CPU
-* iStat Menu can not read the temperature of CPU
+* System may freeze if try to reboot (Shutdown is OK.) - may be related to sleep/hibernate problem
+* Thunderbolt 3 is not driven - need to modify SSDT and BIOS configuration, may be the device path is TDM0? or TRP0? RP09? RP01? RP05?
+  * Testing 20201025: The [Belkin Thunderbolt™ 3 Express Dock HD](https://www.belkin.com/us/p/P-F4U095/) works perfectly when plugged before powerup the system. However, it does not support hotplug. I'm wondering if the thunderbolt is already driven. Although the thunderbolt information in the system report is: Thunderbolt: No drivers are loaded. I also tested an External GPU Enclosure (Aorus Gaming Box + Asrock 5500XT Mini). The LED light in EGPU glows successfully. However, the startup process hangs on gIOScreenLockstate. I got the EGPU path on Ubuntu. It is PciRoot(0x0)/Pci(0x7,0x0)/Pci(0x0,0x0)/Pci(0x1,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0). I tried to add the EDID of Built-in and External Display. No luck, still hangs.
+* HDMI port is not working - maybe it will not work because Apple framebuffer driver does not have a HDMI port on this CPU
+* iStat Menu can not read the temperature of CPU. I don't know if this is due to VirtualSMC does not support this CPU, or need to modify SSDT.
 
 
 # You may need to modify BIOS settings
