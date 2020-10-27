@@ -35,20 +35,24 @@ Battery:             SR Real Battery - Intel SR 1 - 11.540 V / 57000 mWh
 * The sound card and speaker works, 3.5mm audio port also works, by using VoodooHDA.kext. Have tried AppleALC.kext but no luck. (TODO: Need to test if microphone works.)
 # What's working but have flaws 
 * Wifi can be driven by itlwm kext driver, the speed is tested at 20Mbps. However, the itlwm driver may fail to load occasionally at startup. I have checked the boot log and found nothing. The itlwm is just waiting for the hardware to response but the hardware doesn't give a response. Maybe this is a hardware conflict or the itlwm driver needs to be modified.
+  * Work around: You can try not load itlwm.kext at startup. And load it when you log into desktop. See load.sh in itlwm source code for more info.
 * The Bluetooth also may fail to load occasionally. Maybe the cause is the same as Wifi driver. Need to do more tests. When Bluetooth loads successfully. It works perfectly without any problem.
+  * Work around: When itlwm.kext is not load at startup. The bluetooth works perfectly. You can try load itlwm after system boot up to fix bluetooth problem.
 * The battery information is read but can not read capacity. This is due to the _STA function in SSDT. Need to be fixed.
+  * Fixed.
 * The built-in sd card reader works, but it may cause iStat menu to continuesly print error logs like this.
 ```
 deleted fsctl error: Inappropriate ioctl for device, using HARDCODED desired threshold ...
 ```
 The only solution I found is to disable iStat menu disk monitor or do not insert or mount any sd card.
 * iStat menu may freeze during boot time, maybe related to some hardware issue.
+  * Solution: Do not use newer OpenCore version. Stick at 0.6.0.
 # What's not working and currently trying to solve
 * The touchpad is not working - need to modify SSDT, and also maybe need to develop drivers
 * The touch screen is not working - the same as the touchpad, however, someone has already developed a touchscreen driver for GPD P2Max ([This Repository](https://github.com/Azkali/GPD-P2-MAX-Hackintosh)), these two touchscreens is the same.
 * There are glitches on the screen when entering desktop and shutting down. Tried many fixes and no avail. Maybe this is an Apple framebuffer driver problem, or display edid problem. Or maybe we need to wait for 1038ng7 to fix this problem.
 * Sleep/Hibernate problem - maybe need to modify SSDT code of CPU
-* System may freeze during shutdown - may be related to sleep/hibernate problem
+* System may freeze if try to reboot (Shutdown is OK.) - may be related to sleep/hibernate problem
 * Thunderbolt 3 is not driven - need to modify SSDT and BIOS configuration, may be the device path is TDM0? or TRP0? RP09? RP01? RP05?
   * Testing 20201025: The [Belkin Thunderbolt™ 3 Express Dock HD](https://www.belkin.com/us/p/P-F4U095/) works perfectly when plugged before powerup the system. However, it does not support hotplug. I'm wondering if the thunderbolt is already driven. Although the thunderbolt information in the system report is: Thunderbolt: No drivers are loaded. I also tested an External GPU Enclosure (Aorus Gaming Box + Asrock 5500XT Mini). The LED light in EGPU glows successfully. However, the startup process hangs on gIOScreenLockstate. I got the EGPU path on Ubuntu. It is 05:00:0. I tried to add the EDID of Built-in and External Display. No luck, still hangs.
 * HDMI port is not working - maybe it will not work because Apple framebuffer driver does not have a HDMI port on this CPU
