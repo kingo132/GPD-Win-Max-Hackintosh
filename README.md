@@ -26,7 +26,7 @@ Bluetooth Device:    Intel Bluetooth Device
 Battery:             SR Real Battery - Intel SR 1 - 11.540 V / 57000 mWh
 ```
 # What's working
-* All USB port works include two type-c port. (USB3 works speed is tested at 300MB/s read&write)
+* All USB port works include two type-c port. (USB3 works, speed is tested at 300MB/s read&write)
 * Both two type-c ports can connect to external type-c to DP or HDMI monitors. I have tested BENQ 4K monitor without any problem.
 * Joystick emulated mouse works.
 * Gigabyte ethernet port works.
