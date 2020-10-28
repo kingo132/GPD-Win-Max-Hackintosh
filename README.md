@@ -54,6 +54,7 @@ The only solution I found is to disable iStat menu disk monitor or do not insert
 * Sleep/Hibernate problem - maybe need to modify SSDT code of CPU
   * Fixed: add "darkwake=0 -noDC9" to boot-args
 * System may freeze if try to reboot (Shutdown is OK.) - may be related to sleep/hibernate problem
+  * Seems fixed by Sleep/Hibernate problem
 * Thunderbolt 3 is not driven - need to modify SSDT and BIOS configuration, may be the device path is TDM0? or TRP0? RP09? RP01? RP05?
   * Testing 20201025: The [Belkin Thunderbolt™ 3 Express Dock HD](https://www.belkin.com/us/p/P-F4U095/) works perfectly when plugged before powerup the system. However, it does not support hotplug. I'm wondering if the thunderbolt is already driven. Although the thunderbolt information in the system report is: Thunderbolt: No drivers are loaded. I also tested an External GPU Enclosure (Aorus Gaming Box + Asrock 5500XT Mini). The LED light in EGPU glows successfully. However, the startup process hangs on gIOScreenLockstate. I got the EGPU path on Ubuntu. It is PciRoot(0x0)/Pci(0x7,0x0)/Pci(0x0,0x0)/Pci(0x1,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0). I tried to add the EDID of Built-in and External Display. No luck, still hangs.
 * HDMI port is not working - maybe it will not work because Apple framebuffer driver does not have a HDMI port on this CPU
