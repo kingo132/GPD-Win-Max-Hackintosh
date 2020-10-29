@@ -61,6 +61,7 @@ The only solution I found is to disable iStat menu disk monitor or do not insert
 * HDMI port is not working - maybe it will not work because Apple framebuffer driver does not have a HDMI port on this CPU
 * iStat Menu can not read the temperature of CPU. I don't know if this is due to VirtualSMC does not support this CPU, or need to modify SSDT.
   * It is an iStat Menu Sensor Mapping problem. Maybe we can modify the code of VirtualSMC base on the SMC dump of MacbookPro16,2. Or have to use HWMonitorSMC2.app instead.
+  * VirtualSMC currently does not support MacBookPro16,2. You can wait VirtualSMC to update or modify the code of VirtualSMC yourself.
 * System may randomly crash with panic: "EL[0] was invalidated!!"@icl/sched5/IGHardeareCommandStreamer.cpp:64. This is an IGPU driver problem. Currently don't know how to fix this. Have tried framebuffer/device id 01005D8A/538A0000 and 0000528A/528A0100. Both will crash.
 
 
