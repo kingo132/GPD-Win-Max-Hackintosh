@@ -53,6 +53,7 @@ The only solution I found is to disable iStat menu disk monitor or do not insert
 * There are glitches on the screen when entering desktop and shutting down. Tried many fixes and no avail. Maybe this is an Apple framebuffer driver problem, or display edid problem. Or maybe we need to wait for 1038ng7 to fix this problem.
 * Sleep/Hibernate problem - maybe need to modify SSDT code of CPU
   * Fixed: add "darkwake=0 -noDC9" to boot-args
+  * Test 20201029: I close the lid and after about 8 hours open the lid. Wake up is ok. Battery drop from 74.3% to 70%. No wake up during the period because I have turned off power nap. Pretty fair when comparing to my Macbook Pro 15inch 2016. It's battery will drop from 55% to 50% after 24 hours sleep with power nap on.
 * System may freeze if try to reboot (Shutdown is OK.) - may be related to sleep/hibernate problem
   * Seems fixed by Sleep/Hibernate problem
 * Thunderbolt 3 is not driven - need to modify SSDT and BIOS configuration, may be the device path is TDM0? or TRP0? RP09? RP01? RP05?
