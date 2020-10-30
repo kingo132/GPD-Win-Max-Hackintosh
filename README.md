@@ -36,8 +36,10 @@ Battery:             SR Real Battery - Intel SR 1 - 11.540 V / 57000 mWh
 # What's working but have flaws 
 * Wifi can be driven by itlwm kext driver, the speed is tested at 20Mbps. However, the itlwm driver may fail to load occasionally at startup. I have checked the boot log and found nothing. The itlwm is just waiting for the hardware to response but the hardware doesn't give a response. Maybe this is a hardware conflict or the itlwm driver needs to be modified.
   * Work around: You can try not to load itlwm at startup. And load it after log into desktop. See load.sh in itlwm source code for more info.
+  * Seems fixed by build latest debug itlwm.kext from source, and put itlwm.kext at the bottom of opencore's load list.
 * The Bluetooth also may fail to load occasionally. Maybe the cause is the same as Wifi driver. Need to do more tests. When Bluetooth loads successfully. It works perfectly without any problem.
   * Work around: When itlwm is not load at startup. The bluetooth works perfectly. You can try load itlwm after system boot up to fix bluetooth problem.
+  * Seems fixed by build latest debug itlwm.kext from source, and put itlwm.kext at the bottom of opencore's load list.
 * The battery information is read but can not read capacity. This is due to the _STA function in SSDT. Need to be fixed.
   * Fixed.
 * The built-in sd card reader works, but it may cause iStat menu to continuesly print error logs like this.
