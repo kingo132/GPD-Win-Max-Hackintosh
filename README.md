@@ -65,7 +65,7 @@ The only solution I found is to disable iStat menu disk monitor or do not insert
   * VirtualSMC currently does not support MacBookPro16,2. You can wait VirtualSMC to update or modify the code of VirtualSMC yourself.
   * Fixed by changing SMBIOS to MacbookAir9,1
 * System may randomly crash with panic: "EL[0] was invalidated!!"@icl/sched5/IGHardeareCommandStreamer.cpp:64. This is an IGPU driver problem. Currently don't know how to fix this. Have tried platform/device id 01005D8A/538A0000 and 0000528A/528A0100. Both will crash.
-  * Solution: Set SMBIOS to MacbookAir9,1 and set platform/device id to 00005C8A/5C8A0000. Remove Unifiedmem from config.plist..
+  * Solution: Set SMBIOS to MacbookAir9,1 and set platform/device id to 01005C8A/5C8A0000. Remove Unifiedmem from config.plist..
 
 
 # You may need to modify BIOS settings
