@@ -69,7 +69,7 @@ The only solution I found is to disable iStat menu disk monitor or do not insert
   * Solution: Set SMBIOS to MacbookAir9,1 and set platform/device id to 01005C8A/5C8A0000. Remove Unifiedmem from config.plist..
 * Hdmi audio not working, because we are using VoodooHDA. You need to fix AppleAlc.kext problem if you want hdmi audio.
 * Type-c USB3.0 HUB/Adapter may cause all USB in the system to fail if you plugged USB2.0 devices on it. Currently don't know the cause and don't know how to fix this. Both will fail before and after USB Customization.
-  * Workaround: Do not plug any USB2.0 device to USB3.0 Type-c HUB/Adapter.
+  * Workaround: Do not plug any USB2.0 device to USB3.0 Type-c HUB/Adapter. Plug them on a USB2.0 hub or plug directly to winmax's USB3 port.
 
 
 # You may need to modify BIOS settings
