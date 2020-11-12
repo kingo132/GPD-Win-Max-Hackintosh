@@ -84,11 +84,13 @@ Note: We are testing under BIOS version 1.11
 * cfg-lock: Enable -> Disable
 * Vt-d: Enable -> Disable
 * Dvmt: 60MB -> 64MB
+* EHCI Hand-off: Disable -> Enable
 
 Other options that the default value is satisfied
-* above 4g: default is enable
+* above 4g: default is enabled
 * csm: default is disabled
 * boot mode select: default is efi
+* XHCI Hand-off: default is enabled
 
 # PCI information from ubuntu
 ```
