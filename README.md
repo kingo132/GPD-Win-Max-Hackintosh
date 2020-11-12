@@ -35,10 +35,10 @@ Battery:             SR Real Battery - Intel SR 1 - 11.540 V / 57000 mWh
 * The sound card and speaker works, 3.5mm audio port also works, by using VoodooHDA.kext. Have tried AppleALC.kext but no luck. (Must use VoodooHDA v2.9.4 to enable microphone.)
 # What's working but have flaws 
 * Wifi can be driven by itlwm kext driver, the speed is tested at 20Mbps. However, the itlwm driver may fail to load occasionally at startup. I have checked the boot log and found nothing. The itlwm is just waiting for the hardware to response but the hardware doesn't give a response. Maybe this is a hardware conflict or the itlwm driver needs to be modified.
-  * Work around: You can try not to load itlwm at startup. And load it after log into desktop. See load.sh in itlwm source code for more info.
+  * Workaround: You can try not to load itlwm at startup. And load it after log into desktop. See load.sh in itlwm source code for more info.
   * Seems fixed by disable "Allow the computer to turn off the device to save power" option of AX200 in Windows.
 * The Bluetooth also may fail to load occasionally. Maybe the cause is the same as Wifi driver. Need to do more tests. When Bluetooth loads successfully. It works perfectly without any problem.
-  * Work around: When itlwm is not load at startup. The bluetooth works perfectly. You can try load itlwm after system boot up to fix bluetooth problem.
+  * Workaround: When itlwm is not load at startup. The bluetooth works perfectly. You can try load itlwm after system boot up to fix bluetooth problem.
   * Seems fixed by disable "Allow the computer to turn off the device to save power" option of AX200 in Windows.
 * The battery information is read but can not read capacity. This is due to the _STA function in SSDT. Need to be fixed.
   * Fixed.
@@ -69,6 +69,9 @@ The only solution I found is to disable iStat menu disk monitor or do not insert
   * Fixed by changing SMBIOS to MacbookAir9,1
 * System may randomly crash with panic: "EL[0] was invalidated!!"@icl/sched5/IGHardeareCommandStreamer.cpp:64. This is an IGPU driver problem. Currently don't know how to fix this. Have tried platform/device id 01005D8A/538A0000 and 0000528A/528A0100. Both will crash.
   * Solution: Set SMBIOS to MacbookAir9,1 and set platform/device id to 01005C8A/5C8A0000. Remove Unifiedmem from config.plist..
+* Hdmi audio not working, because we are using VoodooHDA. You need to fix AppleAlc.kext problem if you want hdmi audio.
+* Type-c USB3.0 HUB/Adapter may cause all USB in the system to fail if you plugged USB2.0 devices on it. Currently don't know the cause and don't know how to fix this. Both will fail before and after USB Customization.
+  * Workaround: Do not plug any USB2.0 device to USB3.0 Type-c HUB/Adapter.
 
 
 # You may need to modify BIOS settings
