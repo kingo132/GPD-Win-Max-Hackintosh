@@ -402,6 +402,32 @@
 				<key>TableSignature</key>
 				<data>RFNEVA==</data>
 			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Rename HDAS to HDEF (Audio)</string>
+				<key>Count</key>
+				<integer>0</integer>
+				<key>Enabled</key>
+				<false/>
+				<key>Find</key>
+				<data>SERBUw==</data>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data></data>
+				<key>OemTableId</key>
+				<data></data>
+				<key>Replace</key>
+				<data>SERFRg==</data>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>Skip</key>
+				<integer>0</integer>
+				<key>TableLength</key>
+				<integer>0</integer>
+				<key>TableSignature</key>
+				<data>RFNEVA==</data>
+			</dict>
 		</array>
 		<key>Quirks</key>
 		<dict>
@@ -482,13 +508,25 @@
 		<dict>
 			<key>PciRoot(0x0)/Pci(0x1f,0x3)</key>
 			<dict>
+				<key>##device-id</key>
+				<data>EOwCaQ==</data>
+				<key>#device-id</key>
+				<data>cKEAAA==</data>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,31,3</string>
+				<key>device_type</key>
+				<string>Audio device</string>
 				<key>No-hda-gfx</key>
-				<string>onboard-1</string>
+				<string>onboard-2</string>
 				<key>layout-id</key>
 				<integer>100</integer>
+				<key>model</key>
+				<string>Relteck ALC269</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
+				<key>#AAPL01,override-no-connect</key>
+				<data>AP///////wAJ0XycRVQAAA4dAQS1RidgP2+xp1VMniUMUFSla4DRwLMAqcCBgIEAgcABAQEBTdAAoPBwPoAwIDUAuokhAAAaAAAA/wA3NEswMDQwOTAxOQogAAAA/QAoPIeHPAEKICAgICAgAAAA/ABCZW5RIEVXMzI3MFUKAZcCAzLxUV1eX2BhEB8iISAFFAQTEgMBIwkHB4MBAADiAMBlAwwAEADjBeAB5gYFAVRMLKNmAKDwcB+AMCA1ALqJIQAAGlZeAKCgoClQLyA1ALqJIQAAGr9lAFCgQC5gCCAICLqJIQAAHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFQ==</data>
 				<key>AAPL,ig-platform-id</key>
 				<data>AQBcig==</data>
 				<key>AAPL,slot-name</key>
@@ -499,33 +537,53 @@
 				<data>XIoAAA==</data>
 				<key>device-type</key>
 				<string>VGA compatible controller</string>
+				<key>enable-hdmi-dividers-fix</key>
+				<data>AQAAAA==</data>
+				<key>enable-hdmi20</key>
+				<data>AQAAAA==</data>
+				<key>enable-lspcon-support</key>
+				<data>AQAAAA==</data>
 				<key>framebuffer-con0-enable</key>
+				<data>AQAAAA==</data>
+				<key>framebuffer-con0-has-lspcon</key>
 				<data>AQAAAA==</data>
 				<key>framebuffer-con0-type</key>
 				<data>AgAAAA==</data>
 				<key>framebuffer-con1-enable</key>
 				<data>AQAAAA==</data>
+				<key>framebuffer-con1-has-lspcon</key>
+				<data>AQAAAA==</data>
 				<key>framebuffer-con1-type</key>
-				<data>AgAAAA==</data>
+				<data>AAgAAA==</data>
 				<key>framebuffer-con2-enable</key>
 				<data>AQAAAA==</data>
-				<key>framebuffer-con2-type</key>
-				<data>AAQAAA==</data>
-				<key>framebuffer-con3-enable</key>
+				<key>framebuffer-con2-has-lspcon</key>
 				<data>AQAAAA==</data>
-				<key>framebuffer-con3-type</key>
-				<data>AAQAAA==</data>
+				<key>framebuffer-con2-type</key>
+				<data>AAgAAA==</data>
 				<key>framebuffer-patch-enable</key>
 				<data>AQAAAA==</data>
 				<key>framebuffer-stolenmem</key>
 				<data>AAAwAQ==</data>
 				<key>No-hda-gfx</key>
 				<string>onboard-1</string>
+				<key>model</key>
+				<string>Intel Iris Plus Graphics 940</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x7,0x0)/Pci(0x0,0x0)/Pci(0x1,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)</key>
 			<dict>
-				<key>AAPL00,override-no-connect</key>
+				<key>#AAPL00,override-no-connect</key>
 				<data>AP///////wAJ5XycAwAAAAEdAQOACxFgL2+xp1VMniUMUFQAAAABAQEBAQEBAQEBAQEBAQEBwhogUDAAEFAQEDIAbKwAAAAYAAAA/ABUVjA4MFdVTS1OTDAKAAAA/QA8PBAQBwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJM=</data>
+				<key>#AAPL01,override-no-connect</key>
+				<data>AP///////wAJ0XycRVQAAA4dAQS1RidgP2+xp1VMniUMUFSla4DRwLMAqcCBgIEAgcABAQEBTdAAoPBwPoAwIDUAuokhAAAaAAAA/wA3NEswMDQwOTAxOQogAAAA/QAoPIeHPAEKICAgICAgAAAA/ABCZW5RIEVXMzI3MFUKAZcCAzLxUV1eX2BhEB8iISAFFAQTEgMBIwkHB4MBAADiAMBlAwwAEADjBeAB5gYFAVRMLKNmAKDwcB+AMCA1ALqJIQAAGlZeAKCgoClQLyA1ALqJIQAAGr9lAFCgQC5gCCAICLqJIQAAHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFQ==</data>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,7,0/0,0/1,0/0,0/0,0/0,0</string>
+				<key>device_type</key>
+				<string>VGA compatible controller</string>
+				<key>No-hda-gfx</key>
+				<string>onboard-2</string>
+				<key>model</key>
+				<string>Navi 14 [Radeon RX 5500/5500M / Pro 5500M]</string>
 			</dict>
 		</dict>
 		<key>Delete</key>
@@ -1184,19 +1242,19 @@
 				<key>Arch</key>
 				<string>Any</string>
 				<key>BundlePath</key>
-				<string>IO80211Family.kext/Contents/PlugIns/AirPortBrcm4360.kext</string>
+				<string>System/Library/Extensions/corecapture.kext</string>
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
-				<string>Contents/MacOS/AirPortBrcm4360</string>
+				<string>Contents/MacOS/corecapture</string>
 				<key>Identifier</key>
-				<string>com.apple.driver.AirPort.Brcm4360</string>
+				<string>com.apple.driver.corecapture</string>
 				<key>MaxKernel</key>
-				<string></string>
+				<string>19.99.99</string>
 				<key>MinKernel</key>
-				<string></string>
+				<string>17.0.0</string>
 				<key>PlistPath</key>
 				<string>Contents/Info.plist</string>
 			</dict>
@@ -1204,47 +1262,7 @@
 				<key>Arch</key>
 				<string>Any</string>
 				<key>BundlePath</key>
-				<string>IO80211Family.kext/Contents/PlugIns/IO80211NetBooter.kext</string>
-				<key>Comment</key>
-				<string></string>
-				<key>Enabled</key>
-				<true/>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/IO80211NetBooter</string>
-				<key>Identifier</key>
-				<string>com.apple.driver.IO80211NetBooter</string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>Arch</key>
-				<string>Any</string>
-				<key>BundlePath</key>
-				<string>IO80211Family.kext/Contents/PlugIns/AirPortBrcmNIC.kext</string>
-				<key>Comment</key>
-				<string></string>
-				<key>Enabled</key>
-				<true/>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/AirPortBrcmNIC</string>
-				<key>Identifier</key>
-				<string>com.apple.driver.AirPort.BrcmNIC</string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>Arch</key>
-				<string>Any</string>
-				<key>BundlePath</key>
-				<string>IO80211Family.kext</string>
+				<string>System/Library/Extensions/IO80211Family.kext</string>
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
@@ -1254,9 +1272,9 @@
 				<key>Identifier</key>
 				<string>com.apple.iokit.IO80211Family</string>
 				<key>MaxKernel</key>
-				<string></string>
+				<string>19.99.99</string>
 				<key>MinKernel</key>
-				<string></string>
+				<string>17.0.0</string>
 				<key>PlistPath</key>
 				<string>Contents/Info.plist</string>
 			</dict>
@@ -1769,7 +1787,7 @@
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>-v -igfxcdc -igfxdvmt keepsyms=1 debug=0x100 darkwake=0 dc6config=0</string>
+				<string>-v -igfxcdc -igfxdvmt keepsyms=1 debug=0x100 darkwake=0 dc6config=0 agdpmod=pikera</string>
 				<key>csr-active-config</key>
 				<data>AAAAAA==</data>
 				<key>prev-lang:kbd</key>
