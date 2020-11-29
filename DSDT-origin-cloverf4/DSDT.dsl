@@ -21069,7 +21069,7 @@ DefinitionBlock ("", "DSDT", 2, "ALASKA", "A M I ", 0x01072009)
                     Store (0x07DD, OSYS)
                 }
 
-                If (_OSI ("Windows 2015"))
+                If(LOr(_OSI("Darwin"),_OSI("Windows 2015")))
                 {
                     Store (0x07DF, OSYS)
                 }

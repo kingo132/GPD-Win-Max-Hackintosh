@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-	<string>19H2</string>
+	<string>19H15</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
@@ -27,19 +27,19 @@
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
-	<string>12A7403</string>
+	<string>12B45b</string>
 	<key>DTPlatformName</key>
 	<string>macosx</string>
 	<key>DTPlatformVersion</key>
-	<string>10.15.6</string>
+	<string>11.0</string>
 	<key>DTSDKBuild</key>
-	<string>19G68</string>
+	<string>19A547</string>
 	<key>DTSDKName</key>
 	<string>macosx10.15</string>
 	<key>DTXcode</key>
-	<string>1210</string>
+	<string>1220</string>
 	<key>DTXcodeBuild</key>
-	<string>12A7403</string>
+	<string>12B45b</string>
 	<key>IOKitPersonalities</key>
 	<dict>
 		<key>Custom MT2 Personality</key>
@@ -473,8 +473,6 @@
 			<integer>9999</integer>
 			<key>IOProviderClass</key>
 			<string>IOHIDInterface</string>
-			<key>IOResourceMatch</key>
-			<string>IOKit</string>
 			<key>MTEventSource</key>
 			<true/>
 			<key>ProductIDArray</key>
@@ -496,8 +494,6 @@
 			<string>VoodooI2CNativeEngine</string>
 			<key>IOProviderClass</key>
 			<string>VoodooI2CMultitouchInterface</string>
-			<key>IOResourceMatch</key>
-			<string>IOKit</string>
 		</dict>
 		<key>VoodooI2CACPIController</key>
 		<dict>
@@ -516,8 +512,6 @@
 			<integer>9999</integer>
 			<key>IOProviderClass</key>
 			<string>IOService</string>
-			<key>IOResourceMatch</key>
-			<string>IOKit</string>
 		</dict>
 		<key>VoodooI2CControllerDriver</key>
 		<dict>
@@ -529,8 +523,6 @@
 			<integer>9999</integer>
 			<key>IOProviderClass</key>
 			<string>VoodooI2CControllerNub</string>
-			<key>IOResourceMatch</key>
-			<string>IOKit</string>
 		</dict>
 		<key>VoodooI2CPCIController</key>
 		<dict>
@@ -544,8 +536,6 @@
 			<integer>9999</integer>
 			<key>IOProviderClass</key>
 			<string>IOPCIDevice</string>
-			<key>IOResourceMatch</key>
-			<string>IOKit</string>
 		</dict>
 		<key>VoodooI2CPCILakeController</key>
 		<dict>
@@ -559,8 +549,6 @@
 			<integer>9999</integer>
 			<key>IOProviderClass</key>
 			<string>IOPCIDevice</string>
-			<key>IOResourceMatch</key>
-			<string>IOKit</string>
 		</dict>
 	</dict>
 	<key>LSMinimumSystemVersion</key>
