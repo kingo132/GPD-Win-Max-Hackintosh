@@ -40,7 +40,7 @@ deleted fsctl error: Inappropriate ioctl for device, using HARDCODED desired thr
 ```
 The only solution I found is to disable iStat menu disk monitor or do not insert or mount any sd card.
 * iStat menu may freeze during boot time, may be related to some hardware or driver issue. The most suspicious is itlwm.
-* Touchpad & touchscreen works, but it may fail randomly at some boot. Maybe it was the problem of VoodooI2C or somewhat I2C timing problem or kext loading race condition problem.
+* Touchpad & touchscreen works, but it may fail randomly at some boots. Maybe it was the problem of VoodooI2C or I2C timing problem or kext loading race condition problem.
 * There are glitches on the screen when entering the desktop and shutting down.
 * Thunderbolt works but does not support hotplug. Maybe need to modify SSDT to adjust it to satisfy what mac os needs.
 * System may randomly crash with panic: "EL[0] was invalidated!!"@icl/sched5/IGHardeareCommandStreamer.cpp:64. This is an IGPU driver problem. Currently don't know how to fix this. Have tried platform/device id 01005D8A/538A0000 and 0000528A/528A0100. Both will crash. It seems platform/device id 01005C8A/5C8A0000 and SMBIOS MacbookAir9,1 is the most stable combo.
