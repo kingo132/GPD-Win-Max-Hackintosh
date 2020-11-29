@@ -1,7 +1,7 @@
 # GPD-Win-Max-Hackintosh
 Hello, everyone. This is a repository discussing about how to install Mac OS Catalina (or newer version) on GPD Win Max.
 
-Thanks to all the volunteers who participated in this project. I don't have all their name, but without their effect, this repository won't be possible.
+Thanks to all the volunteers who participated in this project. I don't have all their names, but without their effect, this repository won't be possible.
 
 # WinMax running Catalina 10.5.7
 ![image](https://github.com/kingo132/GPD-Win-Max-Hackintosh/blob/main/photos/screenshot.png)
