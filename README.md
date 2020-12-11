@@ -7,10 +7,10 @@ These are all the names I know.
 
 * One big guy for the initial version of EFI
 * Another big guy for working out the intel graphic driver
-* @THEDVIOUS1 for helping me work out the touch screen & touchpad driver
-* @lazd for the Goodix TouchScreen driver
-* @andot for providing p2max EFI for reference
-* @PeterCxy for giving some clues about how to fix some initialize problem of touch screen driver
+* [@THEDVIOUS1](https://github.com/THEDEVIOUS1) for helping me work out the touch screen & touchpad driver
+* [@lazd](https://github.com/lazd/VoodooI2CGoodix) for the Goodix TouchScreen driver
+* [@Azkali](https://github.com/Azkali) for providing p2max EFI for reference
+* [@PeterCxy](https://github.com/PeterCxy) for giving some clues about how to fix some initialize problem of the touch screen driver
 * All the friend in a QQ group for providing many information and many improvment and doing many tests
 
 Great thanks to everyone who participated in this project.
