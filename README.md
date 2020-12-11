@@ -3,6 +3,18 @@ Hello, everyone. This is a repository discussing about how to install Mac OS Cat
 
 Thanks to all the volunteers who participated in this project. I don't have all their names, but without their effect, this repository won't be possible.
 
+These are all the names I know.
+
+* One big guy for the initial version of EFI
+* Another big guy for working out the intel graphic driver
+* @THEDVIOUS1 for helping me work out the touch screen & touchpad driver
+* @lazd for the Goodix TouchScreen driver
+* @andot for providing p2max EFI for reference
+* @PeterCxy for giving some clues about how to fix some initialize problem of touch screen driver
+* All the friend in a QQ group for providing many information and many improvment and doing many tests
+
+Great thanks to everyone who participated in this project.
+
 # WinMax running Catalina 10.5.7
 ![image](https://github.com/kingo132/GPD-Win-Max-Hackintosh/blob/main/photos/screenshot.png)
 
