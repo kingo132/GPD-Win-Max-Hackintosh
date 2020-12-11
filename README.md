@@ -66,7 +66,7 @@ The only solution I found is to disable iStat menu disk monitor or do not insert
 Note: We are testing under BIOS version 1.11
 ## How to modify
 * Method 1: Modify BIOS varialbes using ru.efi. I have uploaded my BIOS dump file [winmax_bios_dump.txt](https://github.com/kingo132/GPD-Win-Max-Hackintosh/blob/main/winmax_bios_dump.txt). You can find offset in this file and modify it using ru.efi. Try reading this guide. [toturial](https://nstarke.github.io/0037-modifying-bios-using-ru-efi.html)
-* Method 2: Flash a customized BIOS by following this video toturial's guid. [toturial](https://www.bilibili.com/video/BV1SK411G7wy)
+* Method 2: Flash a customized BIOS by following this video toturial. [toturial](https://www.bilibili.com/video/BV1SK411G7wy)
 * Method 3: Use setvar of grub to modify BIOS veriables. Check this [tutorial](https://github.com/Azkali/GPD-P2-MAX-Hackintosh/issues/16#issuecomment-565882180)
 ## The options need to be modified
 * cfg-lock: Enable -> Disable
