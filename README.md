@@ -1,9 +1,19 @@
 # GPD-Win-Max-Hackintosh
 Hello, everyone. This is a repository discussing about how to install Mac OS Catalina (or newer version) on GPD Win Max.
 
-Thanks to all the volunteers who participated in this project. We have achieved the minimal requirement to use Mac OS on this little machine.
+Thanks to all the volunteers who participated in this project. I don't have all their names, but without their effect, this repository won't be possible.
 
-However, there're still some difficult problems need to be solved. We are currently trying to solve them in our leisure time. The progress may very slow. If you are also interested, join us to solve them together.
+These are all the names I know.
+
+* One big guy for the initial version of EFI
+* Another big guy for working out the intel graphic driver
+* [@THEDVIOUS1](https://github.com/THEDEVIOUS1) for helping me work out the touch screen & touchpad driver
+* [@lazd](https://github.com/lazd/VoodooI2CGoodix) for the Goodix TouchScreen driver
+* [@Azkali](https://github.com/Azkali) for providing p2max EFI for reference
+* [@PeterCxy](https://github.com/PeterCxy) for giving some clues about how to fix some initialize problem of the touch screen driver
+* All the friend in a QQ group for providing many information and many improvment and doing many tests
+
+Great thanks to everyone who participated in this project.
 
 # WinMax running Catalina 10.5.7
 ![image](https://github.com/kingo132/GPD-Win-Max-Hackintosh/blob/main/photos/screenshot.png)
@@ -31,53 +41,33 @@ Battery:             SR Real Battery - Intel SR 1 - 11.540 V / 57000 mWh
 * Joystick emulated mouse works.
 * Gigabyte ethernet port works.
 * The built-in keyboard works.
-* The Intel Iris integrated graphic card works, and the screen can be rotated 270 degrees by using ScreenResX. You can also hold Command+Option or Win+Alt before clicking Displays item in System Preferences to enable the rotate option if you don't want to install ScreennResx.
-* The sound card and speaker works, 3.5mm audio port also works, by using VoodooHDA.kext. Have tried AppleALC.kext but no luck. (Must use VoodooHDA v2.9.4 to enable microphone.)
+* The Intel Iris integrated graphic card works, and the screen can be rotated 270 degrees by using ScreenResX or RDM. You can also hold Command+Option or Win+Alt before clicking Displays item in System Preferences to enable the rotate option if you don't want to install any additional software.
+* The speaker works, 3.5mm audio port also works.
+* Battery indicator works.
+* Sleep works perfectly.
 # What's working but have flaws 
-* Wifi can be driven by itlwm kext driver, the speed is tested at 20Mbps. However, the itlwm driver may fail to load occasionally at startup. I have checked the boot log and found nothing. The itlwm is just waiting for the hardware to response but the hardware doesn't give a response. Maybe this is a hardware conflict or the itlwm driver needs to be modified.
-  * Workaround: You can try not to load itlwm at startup. And load it after log into desktop. See load.sh in itlwm source code for more info.
-* The Bluetooth also may fail to load occasionally. Maybe the cause is the same as Wifi driver. Need to do more tests. When Bluetooth loads successfully. It works perfectly without any problem.
-  * Workaround: When itlwm is not load at startup. The bluetooth works perfectly. You can try load itlwm after system boot up to fix bluetooth problem.
-* The battery information is read but can not read capacity. This is due to the _STA function in SSDT. Need to be fixed.
-  * Fixed.
 * The built-in sd card reader works, but it may cause iStat menu to continuously print error logs like this.
 ```
 deleted fsctl error: Inappropriate ioctl for device, using HARDCODED desired threshold ...
 ```
 The only solution I found is to disable iStat menu disk monitor or do not insert or mount any sd card.
-* iStat menu may freeze during boot time, may be related to some hardware issue.
-  * Solution: Do not use the newer OpenCore version. Stick at 0.6.0.
-  * Upgraded to Opencore 0.6.3, the problem seems gone
-# What's not working and currently trying to solve
-* The touchpad is not working - need to modify SSDT, and also maybe need to develop drivers
-* The touch screen is not working - the same as the touchpad, however, someone has already developed a touchscreen driver for GPD P2Max ([This Repository](https://github.com/Azkali/GPD-P2-MAX-Hackintosh)), these two touchscreens are the same.
-* There are glitches on the screen when entering desktop and shutting down. Tried many fixes and no avail. Maybe this is an Apple framebuffer driver problem, or display edid problem. Or maybe we need to wait for 1038ng7 to fix this problem.
-* Sleep/Hibernate problem - maybe need to modify SSDT code of CPU
-  * Fixed: add "darkwake=0 -noDC9" to boot-args
-  * Test 20201029: I close the lid and after about 8 hours open the lid. Wake up is ok. Battery drop from 74.3% to 70%. No wake up during the period because I have turned off power nap. Pretty fair when comparing to my Macbook Pro 15inch 2016. It's battery will drop from 55% to 50% after 24 hours sleep with power nap on.
-* System may freeze if try to reboot (Shutdown is OK.) - may be related to sleep/hibernate problem
-  * Seems fixed by Sleep/Hibernate problem
-* Thunderbolt 3 is not driven - need to modify SSDT and BIOS configuration, may be the device path is TDM0? or TRP0? RP09? RP01? RP05?
-  * Testing 20201025: The [Belkin Thunderbolt™ 3 Express Dock HD](https://www.belkin.com/us/p/P-F4U095/) works perfectly when plugged before powerup the system. However, it does not support hotplug. I'm wondering if the thunderbolt is already driven. Although the thunderbolt information in the system report is: Thunderbolt: No drivers are loaded. I also tested an External GPU Enclosure (Aorus Gaming Box + Asrock 5500XT Mini). The LED light in EGPU glows successfully. However, the startup process hangs on gIOScreenLockstate. I got the EGPU path on Window 10. It is PciRoot(0x0)/Pci(0x7,0x0)/Pci(0x0,0x0)/Pci(0x1,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0). I tried to add the EDID of Built-in and External Display. No luck, still hangs.
-  * I'm more and more certain that despite the No drivers are loaded report in system info, the thunderbolt 3 is working out of box. It's IOReg path is TRP0. But it does not support hotplug, you must plug the thunderbolt device before system boot. I also tried several thunderbolt hotplug SSDT patches and all of them failed. May be need to programming SSDT yourself to enable thunderbolt hotplug. Also I don't know how to let system info display thunderbolt information although this may be useless.
-* HDMI port is not working - maybe it will not work because Apple framebuffer driver does not have a HDMI port on this CPU
-* iStat Menu can not read the temperature of CPU. I don't know if this is due to VirtualSMC does not support this CPU, or need to modify SSDT.
-  * It is an iStat Menu Sensor Mapping problem. Maybe we can modify the code of VirtualSMC base on the SMC dump of MacbookPro16,2. Or have to use HWMonitorSMC2.app instead.
-  * VirtualSMC currently does not support MacBookPro16,2. You can wait for VirtualSMC to update or modify the code of VirtualSMC yourself.
-  * Fixed by changing SMBIOS to MacbookAir9,1
-* System may randomly crash with panic: "EL[0] was invalidated!!"@icl/sched5/IGHardeareCommandStreamer.cpp:64. This is an IGPU driver problem. Currently don't know how to fix this. Have tried platform/device id 01005D8A/538A0000 and 0000528A/528A0100. Both will crash.
-  * Solution: Set SMBIOS to MacbookAir9,1 and set platform/device id to 01005C8A/5C8A0000. Remove Unifiedmem from config.plist..
-* Hdmi audio not working, because we are using VoodooHDA. You need to fix AppleAlc.kext problem if you want hdmi audio.
+* iStat menu may freeze during boot time, may be related to some hardware or driver issue. The most suspicious is itlwm.
+* Touchpad & touchscreen works, but it may fail randomly at some boots. Maybe it was the problem of VoodooI2C or I2C timing problem or kext loading race condition problem.
+* There are glitches on the screen when entering the desktop and shutting down.
+* Thunderbolt works but does not support hotplug. Maybe need to modify SSDT to adjust it to satisfy what mac os needs.
+* System may randomly crash with panic: "EL[0] was invalidated!!"@icl/sched5/IGHardeareCommandStreamer.cpp:64. This is an IGPU driver problem. Currently don't know how to fix this. Have tried platform/device id 01005D8A/538A0000 and 0000528A/528A0100. Both will crash. It seems platform/device id 01005C8A/5C8A0000 and SMBIOS MacbookAir9,1 is the most stable combo.
 * Type-c USB3.0 HUB/Adapter may cause all USB in the system to fail if you plugged USB2.0 devices on it. Currently don't know the cause and don't know how to fix this. Both will fail before and after USB Customization.
-  * Workaround: Do not plug any USB2.0 device to USB3.0 Type-c HUB/Adapter. Plug them to a USB2.0 hub or plug directly to winmax's USB3 port.
-
+  * Workaround: Do not plug any USB2.0 device to USB3.0 Type-c HUB/Adapter. Plug them into a USB2.0 hub or plug directly into winmax's USB3 port.
+# What's not working
+* HDMI port is not working
+* HDMI audio is not working
 
 # You may need to modify BIOS settings
 Note: We are testing under BIOS version 1.11
 ## How to modify
-* By using ru.efi. I have uploaded my BIOS dump file [winmax_bios_dump.txt](https://github.com/kingo132/GPD-Win-Max-Hackintosh/blob/main/winmax_bios_dump.txt). You can find offset in this file and modify it using ru.efi.
-* Use setvar by grub. Check this [tutorial](https://github.com/Azkali/GPD-P2-MAX-Hackintosh/issues/16#issuecomment-565882180)
-* Other BIOS modify tools
+* Method 1: (the one I'm using) Modify BIOS varialbes using ru.efi. I have uploaded my BIOS dump file [winmax_bios_dump.txt](https://github.com/kingo132/GPD-Win-Max-Hackintosh/blob/main/winmax_bios_dump.txt). You can find offset in this file and modify it using ru.efi. Try reading this guide. [toturial](https://nstarke.github.io/0037-modifying-bios-using-ru-efi.html)
+* Method 2: (the most convenient one if you did the initial job) Flash a customized BIOS by following this video toturial. [toturial](https://www.bilibili.com/video/BV1SK411G7wy)
+* Method 3: (havn't tested) Use setvar of grub to modify BIOS veriables. Check this [tutorial](https://github.com/Azkali/GPD-P2-MAX-Hackintosh/issues/16#issuecomment-565882180)
 ## The options need to be modified
 * cfg-lock: Enable -> Disable
 * Vt-d: Enable -> Disable
