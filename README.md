@@ -52,6 +52,7 @@ Battery:             SR Real Battery - Intel SR 1 - 11.540 V / 57000 mWh
 * The speaker works, 3.5mm audio port also works.
 * Battery indicator works.
 * Sleep works perfectly.
+* Touch screen works
 # What's working but have flaws 
 * The built-in sd card reader works, but it may cause iStat menu to continuously print error logs like this.
 ```
