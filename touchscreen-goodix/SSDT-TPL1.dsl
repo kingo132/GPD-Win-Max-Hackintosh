@@ -72,7 +72,6 @@ DefinitionBlock ("", "SSDT", 2, "ACDT", "TPL1", 0x00000000)
             {
                 INT1 = GNUM (0x0607000F)
                 TRST = GNUM (0x0607000E)
-                TRST
                 HID2 = One
                 BADR = 0x14
                 SPED = 0x00061A80

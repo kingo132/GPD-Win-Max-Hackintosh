@@ -72,7 +72,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string></string>
+				<string>Fix some useless ACPI error</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
@@ -114,7 +114,7 @@
 				<key>Comment</key>
 				<string>Trackpad and Touchscreen fundamental</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>Path</key>
 				<string>SSDT-XOSI.aml</string>
 			</dict>
@@ -179,7 +179,7 @@
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>Find</key>
 				<data>RAEUFl9TVEE=</data>
 				<key>Limit</key>
@@ -335,7 +335,7 @@
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>Find</key>
 				<data>X09TSQ==</data>
 				<key>Limit</key>
@@ -480,6 +480,8 @@
 		<array/>
 		<key>Quirks</key>
 		<dict>
+			<key>AllowRelocationBlock</key>
+			<false/>
 			<key>AvoidRuntimeDefrag</key>
 			<true/>
 			<key>DevirtualiseMmio</key>
@@ -529,7 +531,7 @@
 				<key>AAPL,slot-name</key>
 				<string>Internal@0,31,3</string>
 				<key>No-hda-gfx</key>
-				<string>onboard-2</string>
+				<string>onboard-1</string>
 				<key>device_type</key>
 				<string>Audio device</string>
 				<key>layout-id</key>
@@ -593,11 +595,11 @@
 				<key>AAPL,slot-name</key>
 				<string>Internal@0,7,0/0,0/1,0/0,0/0,0/0,0</string>
 				<key>No-hda-gfx</key>
-				<string>onboard-2</string>
+				<string>onboard-1</string>
 				<key>device_type</key>
 				<string>VGA compatible controller</string>
 				<key>model</key>
-				<string>Navi 14 [Radeon RX 5500/5500M / Pro 5500M]</string>
+				<string>Asrock RX5500XT Challenger ITX</string>
 			</dict>
 		</dict>
 		<key>Delete</key>
@@ -1317,6 +1319,8 @@
 			<integer>0</integer>
 			<key>AuthRestart</key>
 			<false/>
+			<key>BlacklistAppleUpdate</key>
+			<false/>
 			<key>BootProtect</key>
 			<string>Bootstrap</string>
 			<key>DmgLoading</key>
@@ -1331,10 +1335,10 @@
 			<data></data>
 			<key>PasswordSalt</key>
 			<data></data>
-			<key>SecureBootModel</key>
-			<string>j230k</string>
 			<key>ScanPolicy</key>
 			<integer>0</integer>
+			<key>SecureBootModel</key>
+			<string>j230k</string>
 			<key>Vault</key>
 			<string>Optional</string>
 		</dict>
@@ -1353,6 +1357,10 @@
 				<string>OpenShell.efi</string>
 				<key>Path</key>
 				<string>OpenShell.efi</string>
+				<key>RealPath</key>
+				<false/>
+				<key>TextMode</key>
+				<false/>
 			</dict>
 			<dict>
 				<key>Arguments</key>
@@ -1367,6 +1375,10 @@
 				<string>CleanNvram</string>
 				<key>Path</key>
 				<string>CleanNvram.efi</string>
+				<key>RealPath</key>
+				<false/>
+				<key>TextMode</key>
+				<false/>
 			</dict>
 			<dict>
 				<key>Arguments</key>
@@ -1381,6 +1393,10 @@
 				<string>VerifyMsrE2</string>
 				<key>Path</key>
 				<string>VerifyMsrE2.efi</string>
+				<key>RealPath</key>
+				<false/>
+				<key>TextMode</key>
+				<false/>
 			</dict>
 		</array>
 	</dict>
@@ -1614,7 +1630,7 @@
 			<key>MinimumVolume</key>
 			<integer>10</integer>
 			<key>PlayChime</key>
-			<true/>
+			<string>Enabled</string>
 			<key>VolumeAmplifier</key>
 			<integer>176</integer>
 		</dict>
@@ -1623,6 +1639,11 @@
 		<key>Drivers</key>
 		<array>
 			<string>OpenRuntime.efi</string>
+			<string>Ps2KeyboardDxe.efi</string>
+			<string>Ps2MouseDxe.efi</string>
+			<string>UsbMouseDxe.efi</string>
+			<string>OpenUsbKbDxe.efi</string>
+			<string>NvmExpressDxe.efi</string>
 			<string>HfsPlus.efi</string>
 			<string>OpenCanopy.efi</string>
 			<string>AudioDxe.efi</string>
