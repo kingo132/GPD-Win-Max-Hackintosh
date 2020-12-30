@@ -24,7 +24,7 @@ Great thanks to everyone who participated in this project.
    1. One finger drag set to scroll by default, one finger scroll direction is oppsite to trackpad by default, so you need to uncheck Natural Scroll direction in settings
    2. One finger long press to act as the original drag
    3. Double tap is fixed
-   4. If you prefer the original VoodooI2CGoodix driver, please use VoodooI2CGoodix.orig.kext in the efi/oc/drivers folder.
+   4. If you prefer the original VoodooI2CGoodix driver, please use VoodooI2CGoodix.orig.kext in the efi/oc/drivers folder. You can find the modified code of this driver here https://github.com/kingo132/VoodooI2CGoodix.
 
 ## 20201219
 1. Upgrade opencore to 0.6.4
