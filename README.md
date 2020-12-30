@@ -68,7 +68,7 @@ Battery:             SR Real Battery - Intel SR 1 - 11.540 V / 57000 mWh
 deleted fsctl error: Inappropriate ioctl for device, using HARDCODED desired threshold ...
 ```
 The only solution I found is to disable iStat menu disk monitor or do not insert or mount any sd card.
-* iStat menu may freeze during boot time, may be related to some hardware or driver issue. The most suspicious is itlwm.
+* ~~iStat menu may freeze during boot time, may be related to some hardware or driver issue. The most suspicious is itlwm.~~
 * Trackpad works, but it may fail randomly at some boots. Maybe it was the problem of VoodooI2C or I2C timing problem or kext loading race condition problem.
 * There are glitches on the screen when entering the desktop and shutting down.
 * Thunderbolt works but does not support hotplug. Maybe need to modify SSDT to adjust it to satisfy what mac os needs.
