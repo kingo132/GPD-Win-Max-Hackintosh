@@ -15,6 +15,10 @@ These are all the names I know.
 
 Great thanks to everyone who participated in this project.
 
+# TODO list
+1. Try update microcode in BIOS to test if it can solve the "EL[0] was invalidated" problem
+2. Try to make the build-in joystick work in OpenEmu
+
 # Changelog
 
 ## 20201226
