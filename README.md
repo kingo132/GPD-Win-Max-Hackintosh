@@ -82,6 +82,7 @@ The only solution I found is to disable iStat menu disk monitor or do not insert
 # What's not working
 * HDMI port is not working
 * HDMI audio is not working
+* Build-in Game Controller is not working
 
 # You may need to modify BIOS settings
 Note: We are testing under BIOS version 1.11
