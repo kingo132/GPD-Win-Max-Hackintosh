@@ -86,8 +86,9 @@ The only solution I found is to disable iStat menu disk monitor or do not insert
 * HDMI port is not working
 * HDMI audio is not working
 
-# You may need to modify BIOS settings
+# Modify BIOS settings
 Note: We are testing under BIOS version 1.11
+Note: This EFI can work without modifying bios setting, so this step is not a must-do step, you can skip it if you don't want to bother to dig such deeper.
 ## How to modify
 * Method 1: (the one I'm using) Modify BIOS varialbes using ru.efi. I have uploaded my BIOS dump file [winmax_bios_dump.txt](https://github.com/kingo132/GPD-Win-Max-Hackintosh/blob/main/winmax_bios_dump.txt). You can find offset in this file and modify it using ru.efi. Try reading this guide. [toturial](https://nstarke.github.io/0037-modifying-bios-using-ru-efi.html)
 * Method 2: (the most convenient one if you did the initial job) Flash a customized BIOS by following this video toturial. [toturial](https://www.bilibili.com/video/BV1SK411G7wy)
