@@ -21,6 +21,7 @@ Great thanks to everyone who participated in this project.
 1. Fixed the touch event of external display's touchscreen rotated 270 degrees problem, by does not rotate the touch event at all (it's not a very good fix but it works under my usage ...), because the built-in screen is rotated 270 degrees and VoodooI2CHID did not considered this condition.
 2. Finally fixed the "EL[0] was invalidated!!" crash by adding the igfxfw=2 boot argument. Thanks to @m0d16l14n1 for providing this information. I haven't encounter this panic for days.
 3. Now the built-in joystick works, thanks to the project https://github.com/360Controller/360Controller. I have tested it in OpenEmu, steam and Apple Arcade (tested the game shinsekai), it works very well. However, this driver says it does not support BigSur, and I only tested in Catalina, so I don't know if it works in BigSur.
+4. Upgraded AirportItlwm driver, the speed at some conditions of 5Ghz wifi seems better, but I also encountered some connection problem and performance slowdown when using 2.4Ghz wifi.
 
 ## 20201226
 1. Fixed battery remain time
