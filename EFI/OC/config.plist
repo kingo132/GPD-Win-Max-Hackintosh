@@ -528,10 +528,10 @@
 			<dict>
 				<key>##device-id</key>
 				<data>EOwCaQ==</data>
+				<key>#AAPL,slot-name</key>
+				<string>Internal@0,31,3</string>
 				<key>#device-id</key>
 				<data>cKEAAA==</data>
-				<key>AAPL,slot-name</key>
-				<string>Internal@0,31,3</string>
 				<key>No-hda-gfx</key>
 				<string>onboard-1</string>
 				<key>device_type</key>
@@ -543,14 +543,18 @@
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
+				<key>#AAPL,slot-name</key>
+				<string>internal@0,2,0</string>
 				<key>#AAPL01,override-no-connect</key>
 				<data>AP///////wAJ0XycRVQAAA4dAQS1RidgP2+xp1VMniUMUFSla4DRwLMAqcCBgIEAgcABAQEBTdAAoPBwPoAwIDUAuokhAAAaAAAA/wA3NEswMDQwOTAxOQogAAAA/QAoPIeHPAEKICAgICAgAAAA/ABCZW5RIEVXMzI3MFUKAZcCAzLxUV1eX2BhEB8iISAFFAQTEgMBIwkHB4MBAADiAMBlAwwAEADjBeAB5gYFAVRMLKNmAKDwcB+AMCA1ALqJIQAAGlZeAKCgoClQLyA1ALqJIQAAGr9lAFCgQC5gCCAICLqJIQAAHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFQ==</data>
+				<key>AAPL,GfxYTile</key>
+				<data>AQAAAA==</data>
 				<key>AAPL,ig-platform-id</key>
 				<data>AQBcig==</data>
-				<key>AAPL,slot-name</key>
-				<string>internal@0,2,0</string>
 				<key>AAPL00,override-no-connect</key>
 				<data>AP///////wAJ5QMAAwAAAAEdAQSQCxF4LwAAoFdJmyYQSE8AAAABAQEBAQEBAQEBAQEBAQEBwhogUDAAEFAQEDIAbKwAAAAYAAAA/ABUVjA4MFdVTS1OTDAKAAAA/QA8PBAQBwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALI=</data>
+				<key>GraphicsDisplaySetup</key>
+				<data>AAABAAAAAAAEAAAAjAoAAAEAAAAAAAEAAAADAAAAkGyKDwAAAAAACgAAQAYAAFAAAAAAAAAAAAAAAC4AAAAAAAAAAAAAAAgAAAAgAAAAASAAAAAIAAAAAAABAAEAAAAAAAEAAAAEAAAAAAAAAQEAAAAAAAAAAABACwAACAcAAAAtAAABAAAAAAAAAAA=</data>
 				<key>No-hda-gfx</key>
 				<string>onboard-1</string>
 				<key>device-id</key>
@@ -588,20 +592,26 @@
 				<key>model</key>
 				<string>Intel Iris Plus Graphics 940</string>
 			</dict>
-			<key>PciRoot(0x0)/Pci(0x7,0x0)/Pci(0x0,0x0)/Pci(0x1,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)</key>
+			<key>PciRoot(0x0)/Pci(0xD,0x2)</key>
 			<dict>
-				<key>#AAPL00,override-no-connect</key>
-				<data>AP///////wAJ5XycAwAAAAEdAQOACxFgL2+xp1VMniUMUFQAAAABAQEBAQEBAQEBAQEBAQEBwhogUDAAEFAQEDIAbKwAAAAYAAAA/ABUVjA4MFdVTS1OTDAKAAAA/QA8PBAQBwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJM=</data>
-				<key>#AAPL01,override-no-connect</key>
-				<data>AP///////wAJ0XycRVQAAA4dAQS1RidgP2+xp1VMniUMUFSla4DRwLMAqcCBgIEAgcABAQEBTdAAoPBwPoAwIDUAuokhAAAaAAAA/wA3NEswMDQwOTAxOQogAAAA/QAoPIeHPAEKICAgICAgAAAA/ABCZW5RIEVXMzI3MFUKAZcCAzLxUV1eX2BhEB8iISAFFAQTEgMBIwkHB4MBAADiAMBlAwwAEADjBeAB5gYFAVRMLKNmAKDwcB+AMCA1ALqJIQAAGlZeAKCgoClQLyA1ALqJIQAAGr9lAFCgQC5gCCAICLqJIQAAHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFQ==</data>
-				<key>AAPL,slot-name</key>
-				<string>Internal@0,7,0/0,0/1,0/0,0/0,0/0,0</string>
-				<key>No-hda-gfx</key>
-				<string>onboard-1</string>
-				<key>device_type</key>
-				<string>VGA compatible controller</string>
-				<key>model</key>
-				<string>Asrock RX5500XT Challenger ITX</string>
+				<key>DMAMiscReg</key>
+				<data>EggA/w==</data>
+				<key>TBTDPLowToHigh</key>
+				<data>AQAAAA==</data>
+				<key>TBTFlags</key>
+				<data>DwAAAA==</data>
+				<key>ThunderboltConfig</key>
+				<data>AAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAQA=</data>
+				<key>ThunderboltDROM</key>
+				<data>KhBkdRVNNktMgBwy3wFcAAEADgABAAiBgAKAAAAACIKQAYAAAAAIg4AEgAEAAAiEkAOAAQAABYUJAYEFhgkBgwKHA4jgA4nhAsoCywLMAs0NAUFwcGxlIEluYy4ADAJNYWNpbnRvc2gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</data>
+				<key>ThunderboltUUID</key>
+				<data>hwIBP6qqNF2JuI9PIaC++w==</data>
+				<key>linkDetails</key>
+				<data>CAAAAAMAAAA=</data>
+				<key>pathcr</key>
+				<data>BAAAAAAAAAAAAAcAEAAQAAUAAAAAAAAAAAAHABAAEAABAAAACwAOAA4AAAAAAAAAAgAAAAAAAAAAAAQAAgABAAMAAAAAAAAAAAAHAAIAAQA=</data>
+				<key>sscOffset</key>
+				<data>AAc=</data>
 			</dict>
 		</dict>
 		<key>Delete</key>
@@ -1133,6 +1143,24 @@
 				<key>PlistPath</key>
 				<string>Contents/Info.plist</string>
 			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>360Controller.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/360Controller</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
 		</array>
 		<key>Block</key>
 		<array/>
@@ -1418,7 +1446,7 @@
 				<key>SystemAudioVolume</key>
 				<data>cA==</data>
 				<key>boot-args</key>
-				<string>-v -igfxcdc -igfxdvmt keepsyms=1 debug=0x100 darkwake=0 dc6config=0 agdpmod=pikera msgbuf=1048576</string>
+				<string>-v -igfxcdc -igfxdvmt keepsyms=1 debug=0x100 darkwake=0 dc6config=0 agdpmod=pikera msgbuf=1048576 -disablegfxpreemption igfxfw=2</string>
 				<key>csr-active-config</key>
 				<data>AAAAAA==</data>
 				<key>prev-lang:kbd</key>

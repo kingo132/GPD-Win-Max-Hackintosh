@@ -17,6 +17,11 @@ Great thanks to everyone who participated in this project.
 
 # Changelog
 
+## 20210404
+1. Fixed the touch event of external display's touchscreen rotated 270 degrees problem, by does not rotate the touch event at all (it's not a very good fix but it works under my usage ...), because the built-in screen is rotated 270 degrees and VoodooI2CHID did not considered this condition.
+2. Finally fixed the "EL[0] was invalidated!!" crash by adding the igfxfw=2 boot argument. Thanks to @m0d16l14n1 for providing this information. I haven't encounter this panic for days.
+3. Now the built-in joystick works, thanks to the project https://github.com/360Controller/360Controller. I have tested it in OpenEmu and the game shinsekai, it works very well.
+
 ## 20201226
 1. Fixed battery remain time
 2. Upgraded AirportItlwm driver
@@ -62,6 +67,7 @@ Battery:             SR Real Battery - Intel SR 1 - 11.540 V / 57000 mWh
 * Battery indicator works.
 * Sleep works perfectly.
 * Touch screen works
+* Build-in Game Controller works
 # What's working but have flaws 
 * The built-in sd card reader works, but it may cause iStat menu to continuously print error logs like this.
 ```
@@ -72,13 +78,12 @@ The only solution I found is to disable iStat menu disk monitor or do not insert
 * Trackpad works, but it may fail randomly at some boots. Maybe it was the problem of VoodooI2C or I2C timing problem or kext loading race condition problem.
 * There are glitches on the screen when entering the desktop and shutting down.
 * Thunderbolt works but does not support hotplug. Maybe need to modify SSDT to adjust it to satisfy what mac os needs.
-* System may randomly crash with panic: "EL[0] was invalidated!!"@icl/sched5/IGHardeareCommandStreamer.cpp:64. or "Unexpected context status buffer entry"@icl/sched5/IGHardwareCommandStreamer.cpp:71. Easpically when connected to a 4k or 5k external display, or playing 3d games, or doing some other graphic heavy jobs. This is an IGPU driver problem. Currently don't know how to fix this. Have tried platform/device id 01005D8A/538A0000 and 0000528A/528A0100. Both will crash. It seems platform/device id 01005C8A/5C8A0000 and SMBIOS MacbookAir9,1 is the most stable combo.
+* ~~System may randomly crash with panic: "EL[0] was invalidated!!"@icl/sched5/IGHardeareCommandStreamer.cpp:64. or "Unexpected context status buffer entry"@icl/sched5/IGHardwareCommandStreamer.cpp:71. Easpically when connected to a 4k or 5k external display, or playing 3d games, or doing some other graphic heavy jobs. This is an IGPU driver problem. Currently don't know how to fix this. Have tried platform/device id 01005D8A/538A0000 and 0000528A/528A0100. Both will crash. It seems platform/device id 01005C8A/5C8A0000 and SMBIOS MacbookAir9,1 is the most stable combo.~~
 * Type-c USB3.0 HUB/Adapter may cause all USB in the system to fail if you plugged USB2.0 devices on it. Currently don't know the cause and don't know how to fix this. Both will fail before and after USB Customization.
   * Workaround: Do not plug any USB2.0 device to USB3.0 Type-c HUB/Adapter. Plug them into a USB2.0 hub or plug directly into winmax's USB3 port.
 # What's not working
 * HDMI port is not working
 * HDMI audio is not working
-* Build-in Game Controller is not working
 
 # You may need to modify BIOS settings
 Note: We are testing under BIOS version 1.11
