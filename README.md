@@ -84,7 +84,7 @@ The only solution I found is to disable iStat menu disk monitor or do not insert
   * Workaround: Do not plug any USB2.0 device to USB3.0 Type-c HUB/Adapter. Plug them into a USB2.0 hub or plug directly into winmax's USB3 port.
 # What's not working
 * HDMI port is not working
-* HDMI audio is not working
+* HDMI audio is not working, technically, all the sound of external display is not working, includes type-c or display port
 
 # Modify BIOS settings
 Note 1: We are testing under BIOS version 1.11
