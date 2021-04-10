@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-	<string>19H15</string>
+	<string>19H114</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
@@ -27,19 +27,19 @@
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
-	<string>12B45b</string>
+	<string>12D4e</string>
 	<key>DTPlatformName</key>
 	<string>macosx</string>
 	<key>DTPlatformVersion</key>
-	<string>11.0</string>
+	<string>11.1</string>
 	<key>DTSDKBuild</key>
-	<string>19A547</string>
+	<string>20C63</string>
 	<key>DTSDKName</key>
-	<string>macosx10.15</string>
+	<string>macosx11.1</string>
 	<key>DTXcode</key>
-	<string>1220</string>
+	<string>1240</string>
 	<key>DTXcodeBuild</key>
-	<string>12B45b</string>
+	<string>12D4e</string>
 	<key>IOKitPersonalities</key>
 	<dict>
 		<key>Intel ACPI Sensor Hub Enabler</key>
@@ -54,8 +54,6 @@
 			</array>
 			<key>IOProviderClass</key>
 			<string>IOACPIPlatformDevice</string>
-			<key>IOResourceMatch</key>
-			<string>IOKit</string>
 		</dict>
 		<key>Sensor Hub Event Driver</key>
 		<dict>
@@ -76,8 +74,6 @@
 			<integer>100</integer>
 			<key>IOProviderClass</key>
 			<string>IOHIDInterface</string>
-			<key>IOResourceMatch</key>
-			<string>IOKit</string>
 		</dict>
 		<key>VoodooI2CHIDDevice</key>
 		<dict>
@@ -94,8 +90,6 @@
 			</dict>
 			<key>IOProviderClass</key>
 			<string>VoodooI2CDeviceNub</string>
-			<key>IOResourceMatch</key>
-			<string>IOKit</string>
 		</dict>
 		<key>VoodooI2CHIDDevice Generic Mouse HID Event Driver</key>
 		<dict>
@@ -258,8 +252,6 @@
 			</dict>
 			<key>IOProviderClass</key>
 			<string>IOHIDInterface</string>
-			<key>IOResourceMatch</key>
-			<string>IOKit</string>
 		</dict>
 		<key>VoodooI2CHIDDevice Multitouch HID Event Driver</key>
 		<dict>
@@ -292,8 +284,6 @@
 			<integer>200</integer>
 			<key>IOProviderClass</key>
 			<string>IOHIDInterface</string>
-			<key>IOResourceMatch</key>
-			<string>IOKit</string>
 		</dict>
 		<key>VoodooI2CHIDDevice Precision Touchpad HID Event Driver</key>
 		<dict>
@@ -319,8 +309,6 @@
 			</dict>
 			<key>IOProviderClass</key>
 			<string>IOHIDInterface</string>
-			<key>IOResourceMatch</key>
-			<string>IOKit</string>
 			<key>ProcessBluetoothMouseStopsTrackpad</key>
 			<false/>
 			<key>ProcessUSBMouseStopsTrackpad</key>
@@ -349,8 +337,6 @@
 			<integer>300</integer>
 			<key>IOProviderClass</key>
 			<string>IOHIDInterface</string>
-			<key>IOResourceMatch</key>
-			<string>IOKit</string>
 		</dict>
 		<key>VoodooI2CHIDDevice Touchscreen HID Event Driver</key>
 		<dict>
@@ -371,8 +357,6 @@
 			<integer>400</integer>
 			<key>IOProviderClass</key>
 			<string>IOHIDInterface</string>
-			<key>IOResourceMatch</key>
-			<string>IOKit</string>
 		</dict>
 		<key>VoodooI2CHIDSYNA3602Device</key>
 		<dict>
@@ -389,8 +373,6 @@
 			</dict>
 			<key>IOProviderClass</key>
 			<string>VoodooI2CDeviceNub</string>
-			<key>IOResourceMatch</key>
-			<string>IOKit</string>
 		</dict>
 	</dict>
 	<key>LSMinimumSystemVersion</key>
