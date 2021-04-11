@@ -23,7 +23,7 @@ Great thanks to everyone who participated in this project.
 
 ## 20210404
 1. Finally fixed the "EL[0] was invalidated!!" crash by adding the igfxfw=2 boot argument. Thanks to @m0d16l14n1 for providing this information. I haven't encounter this panic for days.
-2. Now the built-in joystick works, thanks to the project https://github.com/360Controller/360Controller. I have tested it in OpenEmu, steam and Apple Arcade (tested the game shinsekai), it works very well. However, this driver says it does not support BigSur, and I only tested in Catalina, so I don't know if it works in BigSur.
+2. Now the built-in joystick works, thanks to the project https://github.com/360Controller/360Controller. I have tested it in OpenEmu, steam and Apple Arcade (tested the game shinsekai), it works very well. However, this driver says it does not support BigSur, and I only tested in Catalina, so I don't know if it works in BigSur. NOTE: You must switch the joystick mode on (push the joystick switch on the left of winmax to up) before you boot into macos, otherwise the driver will not load. If you want switch joystick mode when macos is running, you may need to put 360controller.kext to /S/L/E and rebuild the kext cache. I don't want to do this. So I'm leaving it alone like this.
 3. Upgraded AirportItlwm driver, the speed at some conditions of 5Ghz wifi seems better, but I also encountered some connection problem and performance slowdown when using 2.4Ghz wifi.
 
 ## 20201226
