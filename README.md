@@ -18,7 +18,7 @@ Great thanks to everyone who participated in this project.
 # Changelog
 
 ## 20210411
-1. Added driver 360controller's System Preferences puglin of builtin-joystick, you may need to check "Pretend to be an Xbox 360 Contoller" option in order to get controller to work in some games. Just copy the plugin builtin-joystick/Pref360Control.prefPane to ~/Library/PreferencePanes and you are all set. Note, I only tested this plugin under Catalina. I don't know if it will work under BigSur.
+1. Added driver 360controller's System Preferences puglin of builtin-joystick, you may need to check "Pretend to be an Xbox 360 Contoller" option in order to get controller to work in some games. Just copy the plugin builtin-joystick/Pref360Control.prefPane to ~/Library/PreferencePanes and you are all set. Note: I only tested this plugin under Catalina. I don't know if it will work under BigSur.
 
 ## 20210410
 1. Fixed the touch event of external display's touchscreen rotated 270 degrees problem, by does not rotate the touch event at all (it's not a very good fix but it works under my usage ...), because the built-in screen is rotated 270 degrees and VoodooI2CHID did not considered this condition.
