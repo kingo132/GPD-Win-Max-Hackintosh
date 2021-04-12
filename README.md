@@ -18,24 +18,25 @@ Great thanks to everyone who participated in this project.
 # Changelog
 
 ## 20210411
-1. Added driver 360controller's System Preferences plugin of builtin-joystick, you may need to enable "Pretend to be an Xbox 360 Contoller" option in order to get controller to work in some games. Just put the plugin builtin-joystick/Pref360Control.prefPane into ~/Library/PreferencePanes and you are all set. Note: I only tested this plugin under Catalina. I don't know if it works under BigSur.
+1. Added driver 360controller's System Preferences plugin of the built-in joystick, you may need to enable the "Pretend to be an Xbox 360 Controller" option to get the controller to work in some games. Just put the plugin builtin-joystick/Pref360Control.prefPane into ~/Library/PreferencePanes and you are all set. Note: I only tested this plugin under Catalina. I don't know if it works under BigSur. By the way, this driver's preference pane is very well polished. I like it personally.
+![8E65D09BA8301303CFAF6D688784E052](https://user-images.githubusercontent.com/46492291/114335073-85ecb800-9b7e-11eb-821e-df54a8635f65.jpg)
 
 ## 20210410
-1. Fixed the touch event of external display's touchscreen rotated 270 degrees problem, by does not rotate the touch event at all (it's not a very good fix but it works under my usage ...), because the built-in screen is rotated 270 degrees and VoodooI2CHID did not considered this condition.
-2. Fixed blue screen problem when boot windows 10 from Opencore
+1. Fixed the touch event of external display's touchscreen rotated 270 degrees problem, by does not rotate the touch event at all (it's not a very good fix but it works under my usage ...), because the built-in screen is rotated 270 degrees and VoodooI2CHID did not consider this condition.
+2. Fixed blue screen problem when booting windows 10 from Opencore
 
 ## 20210404
-1. Finally fixed the "EL[0] was invalidated!!" crash by adding the igfxfw=2 boot argument. Thanks to @m0d16l14n1 for providing this information. I haven't encounter this panic for days.
-2. Now the built-in joystick works, thanks to the project https://github.com/360Controller/360Controller. I have tested it in OpenEmu, steam and Apple Arcade (tested the game shinsekai), it works very well. However, this driver says it does not support BigSur, and I only tested in Catalina, so I don't know if it works in BigSur. NOTE: You must switch the joystick mode on (push the joystick switch on the left of winmax to up) before you boot into macos, otherwise the driver will not load. If you want to switch joystick mode when macos is running, you may need to put 360controller.kext to /S/L/E and rebuild the kext cache. I don't want to do this. So I'm leaving it alone.
-3. Upgraded AirportItlwm driver, the speed at some conditions of 5Ghz wifi seems better, but I also encountered some connection problem and performance slowdown when using 2.4Ghz wifi.
+1. Finally fixed the "EL[0] was invalidated!!" crash by adding the igfxfw=2 boot argument. Thanks to @m0d16l14n1 for providing this information. I haven't encountered this panic for days.
+2. Now the built-in joystick works, thanks to the project https://github.com/360Controller/360Controller. I have tested it in OpenEmu, steam, and Apple Arcade (tested the game Shinseki), it works very well. However, this driver says it does not support BigSur, and I only tested in Catalina, so I don't know if it works in BigSur. NOTE: You must switch the joystick mode on (push the joystick switch on the left of winmax to up) before you boot into macOS, otherwise the driver will not load. If you want to switch joystick mode when macOS is running, you may need to put 360controller.kext to /S/L/E and rebuild the kext cache. I don't want to do this. So I'm leaving it alone.
+3. Upgraded AirportItlwm driver, the speed at some conditions of 5Ghz wifi seems better, but I also encountered some connection problems and performance slowdown when using 2.4Ghz wifi.
 
 ## 20201226
 1. Fixed battery remain time
 2. Upgraded AirportItlwm driver
-3. Modified VoodooI2CGoodix driver, now you can use touchscreen like this
-   1. One finger drag set to scroll by default, one finger scroll direction is oppsite to trackpad by default, so you need to uncheck Natural Scroll direction in settings
+3. Modified VoodooI2CGoodix driver, now you can use the touchscreen like this
+   1. One finger drag set to scroll by default, one finger scroll direction is opposite to trackpad by default, so you need to uncheck Natural Scroll direction in settings
    2. One finger long press to act as the original drag
-   3. Double tap is fixed
+   3. Double-tap is fixed
    4. If you prefer the original VoodooI2CGoodix driver, please use VoodooI2CGoodix.orig.kext in the efi/oc/drivers folder. You can find the modified code of this driver here https://github.com/kingo132/VoodooI2CGoodix.
 
 ## 20201219
