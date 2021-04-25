@@ -107,6 +107,14 @@ The only solution I found is to disable iStat menu disk monitor or do not insert
 * HDMI port is not working
 * HDMI audio is not working, technically, all the sound of external display is not working, includes type-c or display port
 
+# For those who want to upgrade the kext inside this EFI
+Here are some kexts that you can not upgrade because I have made my modifications, it will cause the component to stop working if you replaced my kext.
+
+* 360Controller.kext: I modified some bugs related to WinMax's built-in controller
+* AppleALC.kext: I modified the patch code of icelake device
+* VoodooI2CGoodix.kext: I modified bugs and added some functionalities
+* VoodooI2CHID.kext: I modified some bugs related to WinMax's touchscreen
+
 # Modify BIOS settings
 Note 1: We are testing under BIOS version 1.11
 
