@@ -17,6 +17,10 @@ These are all the names I know.
 
 Great thanks to everyone who participated in this project.
 
+# Other icelake hackintosh for references
+
+https://github.com/Lorys89/DELL_VOSTRO_5401-ICE-LAKE
+
 # Changelog
 
 ## 20210411
