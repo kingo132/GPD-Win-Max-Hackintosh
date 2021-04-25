@@ -113,7 +113,7 @@ Here are some kexts that you can not upgrade because I have made my modification
 * 360Controller.kext: I modified some bugs related to WinMax's built-in controller
 * AppleALC.kext: I modified the patch code of icelake device
 * VoodooI2CGoodix.kext: I modified bugs and added some functionalities
-* VoodooI2CHID.kext: I modified some bugs related to WinMax's touchscreen
+* VoodooI2CHID.kext: I modified some bugs related to WinMax's trackpad and touchscreen
 
 # Modify BIOS settings
 Note 1: We are testing under BIOS version 1.11
