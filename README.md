@@ -1,3 +1,5 @@
+[![](https://img.shields.io/badge/Gitter%20Ice%20Lake-Chat-informational?style=flat&logo=gitter&logoColor=white&color=ed1965)](https://gitter.im/ICE-LAKE-HACKINTOSH-DEVELOPMENT/community)
+
 # GPD-Win-Max-Hackintosh
 Hello, everyone. This is a repository discussing about how to install Mac OS Catalina (or newer version) on GPD Win Max.
 
