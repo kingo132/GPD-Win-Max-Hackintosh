@@ -17,17 +17,6 @@ These are all the names I know.
 
 Great thanks to everyone who participated in this project.
 
-# Other icelake hackintosh for references
-https://github.com/Lorys89/DELL_VOSTRO_5401-ICE-LAKE
-
-https://github.com/m0d16l14n1/Hasee-KingBook-X57S1
-
-https://github.com/Ardentwheel/OpenCore-Hasee-X57S1
-
-https://github.com/leon0410898/XPS13-9300-hackintosh
-
-https://github.com/k-sym/Razer_Blade_Stealth_Late_2019_GTX_Hackintosh
-
 # Changelog
 
 ## 20210411
@@ -56,6 +45,18 @@ https://github.com/k-sym/Razer_Blade_Stealth_Late_2019_GTX_Hackintosh
 1. Upgrade opencore to 0.6.4
 2. Upgrade other drivers
 3. Fixed goodix touch screen driver may fail to load at boot, now the driver can be load at every boot without problem
+
+
+# Other icelake hackintosh for references
+https://github.com/Lorys89/DELL_VOSTRO_5401-ICE-LAKE
+
+https://github.com/m0d16l14n1/Hasee-KingBook-X57S1
+
+https://github.com/Ardentwheel/OpenCore-Hasee-X57S1
+
+https://github.com/leon0410898/XPS13-9300-hackintosh
+
+https://github.com/k-sym/Razer_Blade_Stealth_Late_2019_GTX_Hackintosh
 
 # WinMax running Catalina 10.5.7
 ![image](https://github.com/kingo132/GPD-Win-Max-Hackintosh/blob/main/photos/screenshot.png)
