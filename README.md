@@ -19,9 +19,13 @@ Great thanks to everyone who participated in this project.
 
 # Other icelake hackintosh for references
 https://github.com/Lorys89/DELL_VOSTRO_5401-ICE-LAKE
+
 https://github.com/m0d16l14n1/Hasee-KingBook-X57S1
+
 https://github.com/Ardentwheel/OpenCore-Hasee-X57S1
+
 https://github.com/leon0410898/XPS13-9300-hackintosh
+
 https://github.com/k-sym/Razer_Blade_Stealth_Late_2019_GTX_Hackintosh
 
 # Changelog
@@ -124,13 +128,18 @@ Other options that the default value is satisfied
 
 # Other useful stuff
 https://github.com/p3k163/GPD-Win-Max-3733MHz-Unlocked-BIOS
+
 https://github.com/Xmingbai/AMD-GPU-Performance-optimization
+
 https://github.com/dortania/Getting-Started-With-ACPI
+
 https://github.com/RehabMan/OS-X-ACPI-Debug
 
 # Related issues
 https://github.com/360Controller/360Controller/issues/1140
+
 https://github.com/acidanthera/bugtracker/issues/1343
+
 https://github.com/acidanthera/bugtracker/issues/1283
 
 # PCI information from ubuntu
