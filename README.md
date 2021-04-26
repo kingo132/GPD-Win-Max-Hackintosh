@@ -105,7 +105,10 @@ The only solution I found is to disable iStat menu disk monitor or do not insert
   * Workaround: Do not plug any USB2.0 device to USB3.0 Type-c HUB/Adapter. Plug them into a USB2.0 hub or plug directly into winmax's USB3 port.
 # What's not working
 * HDMI port is not working
-* HDMI audio is not working, technically, all the sound of external display is not working, includes type-c or display port
+* HDMI audio is not working, technically, all the sound of external display is not working, includes type-c or display port.
+  * Besides the problem that icelake does not have native HDMI. Maybe this is the reason why type-c to Displayport also has no audio output to external display.
+![image](https://user-images.githubusercontent.com/46492291/116030179-924c3700-a68d-11eb-92a3-b206fc454b89.png)
+
 
 # For those who want to upgrade the kext inside this EFI
 Here are some kexts that you can not upgrade because I have made my modifications, it will cause the component to stop working if you replaced my kext.
