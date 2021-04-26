@@ -106,7 +106,7 @@ The only solution I found is to disable iStat menu disk monitor or do not insert
 # What's not working
 * HDMI port is not working
 * HDMI audio is not working, technically, all the sound of external display is not working, includes type-c or display port.
-  * Besides the problem that icelake does not have native HDMI. Maybe this is the reason why type-c to Displayport also has no audio output to external display.
+  * Besides the problem that icelake does not have native HDMI. Maybe this is the reason why type-c to Displayport also has no audio output to external display. See [This Issue](https://github.com/acidanthera/bugtracker/issues/1616) for more detail.
 ![image](https://user-images.githubusercontent.com/46492291/116030179-924c3700-a68d-11eb-92a3-b206fc454b89.png)
 
 
