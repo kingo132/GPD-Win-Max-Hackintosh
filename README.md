@@ -46,14 +46,6 @@ Great thanks to everyone who participated in this project.
 2. Upgrade other drivers
 3. Fixed goodix touch screen driver may fail to load at boot, now the driver can be load at every boot without problem
 
-# Other icelake hackintosh for references
-* https://github.com/Lorys89/DELL_VOSTRO_5401-ICE-LAKE
-* https://github.com/m0d16l14n1/Hasee-KingBook-X57S1
-* https://github.com/Ardentwheel/OpenCore-Hasee-X57S1
-* https://github.com/leon0410898/XPS13-9300-hackintosh
-* https://github.com/k-sym/Razer_Blade_Stealth_Late_2019_GTX_Hackintosh
-* https://github.com/lulujyc/OneMix3Pro-OpenCore
-
 # WinMax running Catalina 10.5.7
 ![image](https://github.com/kingo132/GPD-Win-Max-Hackintosh/blob/main/photos/screenshot.png)
 
@@ -145,6 +137,67 @@ Other options that the default value is satisfied
 * https://github.com/360Controller/360Controller/issues/1140
 * https://github.com/acidanthera/bugtracker/issues/1343
 * https://github.com/acidanthera/bugtracker/issues/1283
+
+# Other icelake hackintosh for references
+## Laptops
+* https://github.com/Lorys89/DELL_VOSTRO_5401-ICE-LAKE
+* https://github.com/m0d16l14n1/Hasee-KingBook-X57S1
+* https://github.com/Ardentwheel/OpenCore-Hasee-X57S1
+* https://github.com/leon0410898/XPS13-9300-hackintosh
+* https://github.com/k-sym/Razer_Blade_Stealth_Late_2019_GTX_Hackintosh
+* https://github.com/lulujyc/OneMix3Pro-OpenCore
+* https://github.com/hackintosh-efi/intel-nuc10
+* https://github.com/DagerDW/Lenovo-ideapad-3-14iil05-Hackintosh
+* https://github.com/ghayyem/acer_swift_5_1065g7 ⭐️
+* https://github.com/robmagario/DELL-Inspiron-14-5400-2-in-1-LAPTOP-EFI
+* https://github.com/cstefann/Vostro-3490-hackintosh
+* https://github.com/cstefann/Vostro-3490-hackintosh
+* https://github.com/msdnna/Dell-Vostro-14-5490-Hackintosh ⭐️
+* https://github.com/leon0410898/XPS13-9300-hackintosh
+* https://github.com/dragons3232/Lenovo-gaming-3-10750h-hackintosh-EFI
+* https://github.com/lietxia/XiaoXinAir14IML_2019_hackintosh
+* https://github.com/LuckyCrack/Legion-5i-EFI
+* https://github.com/frozenzero123/YOGA-S740
+* https://github.com/whca/lg-gram-17z90n-EFI
+* https://github.com/itsdrnoob/Mi-NoteBook-14-Hackintosh ⭐️
+* https://github.com/elishevatavori/Xiaomi-Redmibook-16-Hackintosh
+## Desktops
+* https://github.com/yrambler2001/Hackintosh-Intel-i5-10600-RX560-AsRock-B460M-Pro4
+* https://github.com/xiaoyaowx/Hackintosh-Z490-ASRock-Steel-Legend-Intel-10700
+* https://github.com/CasperNan/opencore-ASUS-B460m-plus-10400
+* https://github.com/jalalabdulaziz/ROG-Strix-B460-I
+* https://github.com/intihyan/OC-b460i-strix-i7-10700
+* https://github.com/polarisink/ROG_B460i_Hackintosh
+* https://github.com/yilmazca/intel-i9-10900K-Asus-prime-Z490A-hackintosh
+* https://github.com/evenlinyf/hackintosh-EFI-Z490A-i710700k-5700xt
+* https://github.com/taoche/Z490-E-Hackintosh
+* https://github.com/jergoo/Hackintosh-ROG-STRIX-Z490I
+* https://github.com/stevenliuit/Hackintosh-Intel-i7-10700k-ASUS-Z490m-plus-5500xt
+* https://github.com/shijij/OSX_EFI_Asus_Z490_MAXIMUS_FORMULA
+* https://github.com/billzhong/dell-precision-3240-compact-hackintosh
+* https://github.com/dovtuan/Gigabyte-B460M-Aorus-Pro-Hackintosh-Open-Core
+* https://github.com/duongnguyensr/opencore-efi
+* https://github.com/nhd2106/EFI-Hackintosh-B460M-Aorus-Pro-Core-i5-10400-RX-580-wifi-intel-AX200
+* https://github.com/bangbaew/Gigabyte-B460M-DS3H-Hackintosh
+* https://github.com/bugprogrammer/hackintosh/tree/Z490-AORUS-ELETE+10900K+RX5700XT
+* https://github.com/SchmockLord/Hackintosh-Intel-i9-10900k-Gigabyte-Z490-Vision-D
+* https://github.com/xiaovie/Hackintosh-Intel-i9-10900k-Gigabyte-Z490-Vision-D
+* https://github.com/rursache/Hackintosh-i9-10900k-Z490-Vision-G
+* https://github.com/eos-alchemist/EFI.Z490.Vision.D
+* https://github.com/weiyien/Hackintosh_GIGABYTE_Z-490_I5-10400
+* https://github.com/SwimmingPig/Hackintosh-Intel-i5-10400-Gigabyte-Z490M-Gaming-X
+* https://github.com/abing258/z490i-i9-10850k-5500xt
+* https://github.com/josways/B460M-MORTAR
+* https://github.com/cheneyxx/Hackintosh-10400-B460M-MORTAR
+* https://github.com/Abhinavcs7/EFI-For-MSI-H41OM-PRO---VH-MacOS-big-sur-
+* https://github.com/dakezi/i3-10100-MSI-H410M-BOOMER-UHD630-Hackintosh-EFI
+* https://github.com/Dir3Rav3n/MSI-MAG-Z490-TOMAHAWK-i7-10700-OpenCore-
+* https://github.com/Baio1977/MSI-MAG-Z490-Tomahawk-UHD630
+* https://github.com/redcweed/z490
+* https://github.com/Flop88/opencore
+* https://github.com/kingwood77/MSI-Z490i-Unify-Hackintosh
+* https://github.com/wjz304/Hackintosh-EFI-MSI-Z490i-Unify
+* https://github.com/diskerror/EFI
 
 # PCI information from ubuntu
 ```
