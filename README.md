@@ -46,17 +46,13 @@ Great thanks to everyone who participated in this project.
 2. Upgrade other drivers
 3. Fixed goodix touch screen driver may fail to load at boot, now the driver can be load at every boot without problem
 
-
 # Other icelake hackintosh for references
-https://github.com/Lorys89/DELL_VOSTRO_5401-ICE-LAKE
-
-https://github.com/m0d16l14n1/Hasee-KingBook-X57S1
-
-https://github.com/Ardentwheel/OpenCore-Hasee-X57S1
-
-https://github.com/leon0410898/XPS13-9300-hackintosh
-
-https://github.com/k-sym/Razer_Blade_Stealth_Late_2019_GTX_Hackintosh
+* https://github.com/Lorys89/DELL_VOSTRO_5401-ICE-LAKE
+* https://github.com/m0d16l14n1/Hasee-KingBook-X57S1
+* https://github.com/Ardentwheel/OpenCore-Hasee-X57S1
+* https://github.com/leon0410898/XPS13-9300-hackintosh
+* https://github.com/k-sym/Razer_Blade_Stealth_Late_2019_GTX_Hackintosh
+* https://github.com/lulujyc/OneMix3Pro-OpenCore
 
 # WinMax running Catalina 10.5.7
 ![image](https://github.com/kingo132/GPD-Win-Max-Hackintosh/blob/main/photos/screenshot.png)
@@ -139,22 +135,16 @@ Other options that the default value is satisfied
 * XHCI Hand-off: default is enabled
 
 # Other useful stuff
-https://github.com/p3k163/GPD-Win-Max-3733MHz-Unlocked-BIOS
-
-https://github.com/Xmingbai/AMD-GPU-Performance-optimization
-
-https://github.com/dortania/Getting-Started-With-ACPI
-
-https://github.com/RehabMan/OS-X-ACPI-Debug
-
-https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/icelake.html#platforminfo
+* https://github.com/p3k163/GPD-Win-Max-3733MHz-Unlocked-BIOS
+* https://github.com/Xmingbai/AMD-GPU-Performance-optimization
+* https://github.com/dortania/Getting-Started-With-ACPI
+* https://github.com/RehabMan/OS-X-ACPI-Debug
+* https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/icelake.html#platforminfo
 
 # Related issues
-https://github.com/360Controller/360Controller/issues/1140
-
-https://github.com/acidanthera/bugtracker/issues/1343
-
-https://github.com/acidanthera/bugtracker/issues/1283
+* https://github.com/360Controller/360Controller/issues/1140
+* https://github.com/acidanthera/bugtracker/issues/1343
+* https://github.com/acidanthera/bugtracker/issues/1283
 
 # PCI information from ubuntu
 ```
