@@ -144,6 +144,8 @@ https://github.com/dortania/Getting-Started-With-ACPI
 
 https://github.com/RehabMan/OS-X-ACPI-Debug
 
+https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/icelake.html#platforminfo
+
 # Related issues
 https://github.com/360Controller/360Controller/issues/1140
 
