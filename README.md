@@ -23,7 +23,7 @@ Great thanks to everyone who participated in this project.
 1. Support "Smartisan TNT go" external display and type cover. Fixed the keyboard and trackpad issue. Added fn key maps.
 
 ## 20210411
-1. Added driver 360controller's System Preferences plugin of the built-in joystick, you may need to enable the "Pretend to be an Xbox 360 Controller" option to get the controller to work in some games. Just put the plugin builtin-joystick/Pref360Control.prefPane into ~/Library/PreferencePanes and you are all set. Note: I only tested this plugin under Catalina. I don't know if it works under BigSur. By the way, this driver's preference pane is very well polished. I like it personally.
+1. Added driver 360controller's System Preferences plugin of the built-in joystick, you may need to enable the "Pretend to be an Xbox 360 Controller" option to get the controller to work in some games. Just put the plugin builtin-joystick/Pref360Control.prefPane into ~/Library/PreferencePanes and you are all set. Note: I only tested this plugin under Catalina. I don't know if it works under BigSur. By the way, this driver's preference pane is very well polished. I'm loving it.
 ![8E65D09BA8301303CFAF6D688784E052](https://user-images.githubusercontent.com/46492291/114335073-85ecb800-9b7e-11eb-821e-df54a8635f65.jpg)
 ## 20210410
 1. Fixed the touch event of external display's touchscreen rotated 270 degrees problem, by does not rotate the touch event at all (it's not a very good fix but it works under my usage ...), because the built-in screen is rotated 270 degrees and VoodooI2CHID did not consider this condition.
