@@ -20,7 +20,7 @@ Great thanks to everyone who participated in this project.
 # Changelog
 
 ## 20210515
-1. Support "Smartisan TNT go" external display and type cover. Fixed the keyboard and trackpad issue. Added fn keymaps. You can install [eqMac](https://eqmac.app/) in order to control the volume of this external display, also it works with all other DP external displays.
+1. Support "Smartisan TNT go" external display and type cover. Fixed the keyboard and trackpad issue. Added fn keymaps. You can install [eqMac](https://eqmac.app/) in order to control the volume of this external display, also it will works with all other DP external displays.
 
 ## 20210411
 1. Added driver 360controller's System Preferences plugin of the built-in joystick, you may need to enable the "Pretend to be an Xbox 360 Controller" option to get the controller to work in some games. Just put the plugin builtin-joystick/Pref360Control.prefPane into ~/Library/PreferencePanes and you are all set. Note: I only tested this plugin under Catalina. I don't know if it works under BigSur. By the way, this driver's preference pane is very well polished. I'm loving it.
