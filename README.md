@@ -101,7 +101,8 @@ The only solution I found is to disable iStat menu disk monitor or do not insert
   * Besides the problem that icelake does not have native HDMI. Maybe this is the reason why type-c to Displayport also has no audio output to external display. See [This Issue](https://github.com/acidanthera/bugtracker/issues/1616) for more detail.
 ![image](https://user-images.githubusercontent.com/46492291/116030179-924c3700-a68d-11eb-92a3-b206fc454b89.png)
 
-# Disable SD/TF card auto mount
+# Extend the life of SD card
+## Disable SD card auto mount
 Get UUID by using this command
 ```
 diskutil info /Volumes/volume name
@@ -109,6 +110,11 @@ diskutil info /Volumes/volume name
 Add this entry to /etc/fstab. Note to change exfat to the filesystem type of your tf card. I'm assuming it is exfat.
 ```
 UUID=<UUID get from piror command>   none  exfat  rw,noauto
+```
+## Prevent spotlight from indexing the SD card
+```
+cd /Volumes/yourtfcard
+touch .metadata_never_index
 ```
 
 # For those who want to upgrade the kext inside this EFI
