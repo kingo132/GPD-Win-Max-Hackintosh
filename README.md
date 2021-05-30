@@ -106,7 +106,7 @@ Get UUID by using this command
 ```
 diskutil info /Volumes/volume name
 ```
-Add this entry to /etc/fstab. Note to change exfat to the filesystem type of your tf card. I'm assuming your filesystem of your tf card is exfat.
+Add this entry to /etc/fstab. Note to change exfat to the filesystem type of your tf card. I'm assuming it is exfat.
 ```
 UUID=<UUID get from piror command>   none  exfat  rw,noauto
 ```
