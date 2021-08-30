@@ -17,6 +17,15 @@ These are all the names I know.
 
 Great thanks to everyone who participated in this project.
 
+# About the screen glitch issue
+
+Latest update 20210830:
+
+> m0d16l14n1 @m0d16l14n1 Jul 05 06:15
+> @kingo132 so, i as i mentioned previously that underrun issue appeared again in beta 2 of monterey, but it's still has that "remLinesForOnGlass=1198 blah-blah" in log too. i saw in linux docs for intel graphics that that Guard was added for Xe graphics... Interesting if that "adding" has any related to future release of Iris Xe macbooks, lol?
+> logs right now have much more "information" and errors too, heh
+> many of "flip transactions" errors, still dbuf and etc
+
 # Changelog
 
 ## 20210515
