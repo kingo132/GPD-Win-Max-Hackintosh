@@ -19,6 +19,9 @@ Great thanks to everyone who participated in this project.
 
 # Changelog
 
+## 20240118
+1. Upgraded to Venture 13.6.3
+
 ## 20211002
 1. Fixed boot screen glitch
 
