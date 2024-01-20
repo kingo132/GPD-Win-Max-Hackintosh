@@ -21,6 +21,7 @@ Great thanks to everyone who participated in this project.
 
 ## 20240118
 1. Upgraded to Venture 13.6.3
+2. Solder the BCM94360CS2 WiFi network card to the motherboard, enabling Airdrop and Handoff. -> [Detail](https://github.com/kingo132/GPD-Win-Max-Hackintosh/blob/main/solder-BCM94360CS2.md)
 
 ## 20211002
 1. Fixed boot screen glitch
